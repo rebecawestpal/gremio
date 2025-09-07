@@ -1,0 +1,184 @@
+main {
+    background-color: #ecf0f1;
+}
+
+main .mainContent {
+    padding: 0.5rem 1rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mainContent h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.mainSection {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.125rem;
+}
+.suggestionSection a{
+    color: #5e1ec0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.projectsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.projectCard {
+    width: 100%;
+    height: 350px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.projectCard img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.projectCard h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.projectCard p {
+    text-align: center;
+    font-size: 1rem;
+    color: #062442;
+}
+
+.donateSection {
+    align-items: center;
+}
+
+.donateSection p, .suggestionSection p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #062442;
+}
+
+.donateSection button, .suggestionSection button {
+    background-color: #7324e1;
+    color: white;
+    width: max-content;
+    padding: 0.725rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: auto;
+    border: 1px solid #7324e1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.donateSection button:hover, .suggestionSection button:hover {
+    background-color: transparent;
+    color: #7324e1;
+}
+
+#qrCodeContainer {
+    display: none;
+}
+
+#qrCodeContainer img {
+    width: 300px;
+}
+
+.suggestionSection button {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.725rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.125rem;
+    outline: none;
+    color: #062442;
+}
+
+@media screen and (max-width: 1280px) {
+    .projectsContainer {
+        flex-direction: column;
+    }
+
+    #qrCodeContainer img {
+        width: 100%;
+    }
+}
+select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #2c3e50;
+}
+
+.botoesCurso {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.botoesCurso button {
+    background-color: #7324e1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botoesCurso button:hover {
+    background-color: #5e1ec0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+th {
+    background-color: #7324e1;
+    color: white;
+}
+
+.tabelaOculta {
+    display: none;
+}

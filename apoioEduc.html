@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Portal Grêmio Escolar</title>
+        <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="assets/css/components/Globals.css">
+        <link rel="stylesheet" href="assets/css/components/Header.css">
+        <link rel="stylesheet" href="assets/css/components/Footer.css">
+        <link rel="stylesheet" href="assets/css/pages/apoioEduc.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="headerCont">
+                <a href="index.html">
+                    <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio" width="96">
+                </a>
+                <nav class="menuNav">
+                    <a href="quemSomos.html" class="menuItens">Quem Somos</a>
+                    <a href="calendario.html" class="menuItens">Calendário</a>
+                    <a href="esportes.html" class="menuItens">Esportes e Clubes</a>
+                    <a href="biblioteca.html" class="menuItens">Biblioteca</a>
+                    <a href="index.html" class="menuItens">Apoio Escolar</a>
+                    <a href="acoes.html" class="menuItens">Ações</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+   <div class="mainContent">
+        <div class="mainSection">
+    <h2>Explore os Cursos</h2>
+    <form method="post">
+        <label for="cursoSelect">Escolha um curso:</label>
+        <select id="cursoSelect">
+            <option value="selecione">Selecione</option>
+            <option value="ds">MTEC Dev. Sistemas</option>
+            <option value="edfi">MTEC Edificações</option>
+            <option value="meca">MTEC Mecatrônica</option>
+            <option value="adm">Administração</option>
+            <option value="protese">Prót. Dentária</option>
+            <option value="eletronica">Eletrônica</option>
+            <option value="exatas">Matemática</option>
+        </select>
+    </form>
+
+    <div class="botoesCurso">
+        <button type="button" onclick="mostrarTabela('1')">1º Módulo</button>
+        <button type="button" onclick="mostrarTabela('2')">2º Módulo</button>
+        <button type="button" onclick="mostrarTabela('3')">3º Módulo</button>
+    </div>
+
+    <div class="tabelasCurso">
+        <!-- DS -->
+        <table id="tabela_ds_1" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Banco de Dados I</td><td>Compreender processos lógicos e construção de bancos de dados.</td></tr></tbody>
+            <tbody><tr><td>Prog. Web I</td><td>Desenvolver sites produzindo elementos gráficos e linguagens web.</td></tr></tbody>
+            <tbody><tr><td>Design Digital</td><td>Aprender a produzir e aplicar elementos gráficos e padrões visuais.</td></tr></tbody>
+            <tbody><tr><td>Técnicas de Prog. e Alg.</td><td>Elaborar algoritmos utilizando linguagem de programação em um ambiente de
+            desenvolvimento, aplicando técnicas de levantamento de dados.</td></tr></tbody>
+            <tbody><tr><td>Fund. de Informática</td><td>Aprender sobre a história e os conceitos básicos de programação/uso de computadores e softwares.</td></tr></tbody>
+            <tbody><tr><td>Análise e Proj. de Sistemas</td><td>Aprender a linha de raciocínio a ser seguida para criação de um sistema e a documentação necessária</td></tr></tbody>
+            <tbody><tr><td colspan="2">Precisa de ajuda? <a href="https://drive.google.com/drive/folders/1VyfxLmXQr7jVXwqxy2iBqZrTWyuXTgHL?usp=drive_link"> Encontre aqui.</a></td></tr></tbody>
+        </table>
+        <table id="tabela_ds_2" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Banco de Dados II</td><td>Aprender mais detalhadamente os comandos e consultas possíveis em um banco de dados e sua construção.</td></tr></tbody>
+            <tbody><tr><td>Prog. Web II</td><td>Desenvolver sistemas para internet, utilizando interface para o usuário no lado servidor (Introdução php).</td></tr></tbody>
+            <tbody><tr><td>Prog. Mobile I</td><td>Produção de aplicativos para Android através do AndroidStudio.</td></tr></tbody>
+            <tbody><tr><td>Desenv. de Sistemas</td><td>Aprender linguagens de compilação com lógica aplicada a softwares.</td></tr></tbody>
+        </table>
+        <table id="tabela_ds_3" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Sist. Embarcados</td><td>Utilizar recursos de sistemas embarcados.</td></tr></tbody>
+            <tbody><tr><td>Prog. Web III</td><td>Aperfeiçoamento das técnicas de desenolvimento web e integração entre limguagens, introdução a responsividade</td></tr></tbody>
+            <tbody><tr><td>Prog. Mobile II</td><td>Produção mais detalhada de aplicativos para Android, propondo e aplicando soluções de segurança da informação.</td></tr></tbody>
+            <tbody><tr><td>Internet, Protocolos e Seg. de Sist. da Inform.</td><td>Introdução de segurança de redes e como manter seu sistema seguro e funcionando, 
+            entendendo protocolos e eventuais erros</td></tr></tbody>
+            <tbody><tr><td>Planej. de TCC</td><td>Pensar e produzir o Projeto de Conclusão de Curso.</td></td></tr></tbody>
+            <tbody><tr><td>Qualidade e Teste de Software</td><td> Fundamentos, tipos, técnicas e ferramentas necessárias para garantir a qualidade de um produto de software</td></tr></tbody>
+        </table>
+
+        <!-- Edificações -->
+        <table id="tabela_edfi_1" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Estudo do Solo e de Materiais na Constr. Civil</td><td>Apresenta as propriedades dos solos e dos principais materiais usados na construção 
+            (cimento, areia, concreto, aço), visando a escolha correta para cada tipo de obra.</td></tr></tbody>
+            <tbody><tr><td>Topografia Aplic. à Constr. Civil</td><td> Técnicas de medição e representação do terreno (com uso de instrumentos).</td></tr></tbody>
+            <tbody><tr><td>Técnicas e Práticas Construtivas de Infra.</td><td>Abordagem dos métodos e etapas da construção de fundações, redes de drenagem e outras estruturas.</td></tr></tbody>
+            <tbody><tr><td>Desenho Básico Aplic. à Constr. Civil</td><td>Noções de desenho técnico com foco na construção civil e leitura de plantas.</td></tr></tbody>
+            <tbody><tr><td>Informática Aplic. à Constr. Civil</td><td>Uso de softwares voltados ao processo (como AutoCAD e Excel) para criar plantas, orçamentos e planilhas.</td></tr></tbody>
+            <tbody><tr><td>Planej. Técnico da Constr. Civil</td><td> Ensinar como organizar, prever e controlar todos os recursos necessários para a execução de uma obra.</td></tr></tbody>
+        </table>
+        <table id="tabela_edfi_2" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Planej. Econômico da Constr. Civil</td><td>Estudo dos custos envolvidos em obras, orçamentos, cronogramas e estudo de viabilidade financeira.</td></tr></tbody>
+            <tbody><tr><td>Elaboração de Projetos Técnicos</td><td>Desenvolvimento de desenhos e projetos técnicos detalhados, com foco em normas, escalas e representação gráfica.</td></tr></tbody>
+            <tbody><tr><td>Técnicas e Práticas Construtivas de Superestrutura, Vedação e Cobertura</td><td>Construção de elementos estruturais como pilares, lajes, paredes e sistemas de cobertura</td></tr></tbody>
+            <tbody><tr><td>Projetos de Instalações Prediais</td><td>Planejamento e desenho de instalações hidráulicas, sanitárias e elétricas.</td></tr></tbody>
+            <tbody><tr><td>Tecnologia dos Materiais de Constr. Civil I</td><td>Estudo sobre materiais e sua aplicação em diferentes contextos de obra.</td></tr></tbody>
+        </table>
+        <table id="tabela_edfi_3" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Gerenciamento e Implant. de Obras</td><td>Coordenação e controle da execução de obras, incluindo gestão de equipes e cronogramas.</td></tr></tbody>
+            <tbody><tr><td>Estruturas na Constr. Civil</td><td>Análise e dimensionamento de estruturas como fundações, vigas e pilares, conforme normas técnicas.</td></tr></tbody>
+            <tbody><tr><td>Desenv. de Projetos Técnicos</td><td>Criação completa de projetos arquitetônicos e estruturais com base em exigências técnicas.</td></tr></tbody>
+            <tbody><tr><td>Técnicas e Práticas Construtivas de Acabamentos</td><td>Aplicação de acabamentos como pisos, revestimentos, pintura, forros e detalhes finais das construções.</td></tr></tbody>
+            <tbody><tr><td>Tecnologia dos Materiais de Constr. Civil II</td><td>Estudo aprofundado sobre materiais e sua aplicação em diferentes contextos de obra, 
+            analizando as situações em mãos.</td></tr></tbody>
+            <tbody><tr><td>Planej. de TCC</td><td>Pensar e produzir o Projeto de Conclusão de Curso.</td></tr></tbody>
+        </table>
+
+        <!-- Mecatrônica -->
+        <table id="tabela_meca_1" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Mecanismos Mecatrônicos</td><td>Estudo dos componentes mecânicos aplicados à mecatrônica, como engrenagens, polias e alavancas, fusos 
+            e sistemas de transmissão de movimento.</td></tr></tbody>
+            <tbody><tr><td>Segurança Ambiental e do Trabalho</td><td>Normas de segurança, prevenção de riscos e práticas sustentáveis no ambiente industrial.</td></tr></tbody>
+            <tbody><tr><td>Automação I: Hidráulica e Pneumática</td><td>Estudo dos sistemas de automação baseados em fluidos: princípios, componentes e aplicações industriais de circuitos.</td></tr></tbody>
+            <tbody><tr><td>Desenho Auxiliado por Computador</td><td>Utilização de softwares para criação e interpretação de desenhos técnicos e projetos mecânicos.</td></tr></tbody>
+            <tbody><tr><td>Aplicativos Informatizados</td><td>Uso de ferramentas de informática (como Word, Excel e PowerPoint) aplicadas à organização e execução de tarefas técnicas e administrativas.</td></tr></tbody>
+        </table>
+        <table id="tabela_meca_2" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Automação II: Máquinas, Comandos e Controladores Lógicos Programáveis (CLP's)</td><td>Foco na automação industrial com comandos elétricos, CLPs e suas 
+            aplicações em sistemas automatizados.</td></tr></tbody>
+            <tbody><tr><td>Circuitos Elétricos, Eletrônicos e Analógicos</td><td>Análise de circuitos com foco em resistores, capacitores, diodos e transistores.</td></tr></tbody>
+            <tbody><tr><td>Eletrônica Digital</td><td>Estudo de sistemas lógicos, portas lógicas, flip-flops, circuitos sequenciais e combinacionais.</td></tr></tbody>
+            <tbody><tr><td>Resistência e Ensaios dos Materiais</td><td>Propriedades físicas e mecânicas dos materiais e ensaios para análise de resistência, dureza e fadiga.</td></tr></tbody>
+            <tbody><tr><td>Sistemas Supervisórios e Controle de Processos</td><td>Introdução ao controle de processos industriais, com uso de sensores, atuadores e softwares.</td></tr></tbody>
+        </table>
+        <table id="tabela_meca_3" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Tecnologia da Manufatura e Controle Dimensional</td><td>Técnicas de usinagem, leitura de instrumentos de medição e tolerâncias dimensionais aplicadas à indústria.</td></tr></tbody>
+            <tbody><tr><td>Automação III: Robótica e Manufatura Flexível</td><td>Estudo de robôs industriais, programação de movimentos, sensores e integração com sistemas flexíveis de produção.</td></tr></tbody>
+            <tbody><tr><td>Linguagens de Programação e Microcontroladores para Mecatrônica</td><td>Programação de microcontroladores e desenvolvimento de soluções embarcadas com foco em automação.</td></tr></tbody>
+            <tbody><tr><td>Máquinas com Controle Numérico (CNC)</td><td>Operação e programação de máquinas CNC (torno e fresadora), leitura de código G e M.</td></tr></tbody>
+            <tbody><tr><td>Organização Industrial e Tecnologia da Manutenção</td><td>Gestão da manutenção (preventiva, corretiva e preditiva) e organização de processos produtivos industriais.</td></tr></tbody>
+            <tbody><tr><td>Sistemas de Acionamento Eletrônico</td><td>Controle de motores por meio de inversores de frequência, servomotores e dispositivos eletrônicos de potência.</td></tr></tbody>
+            <tbody><tr><td>Planej. de TCC</td><td>Pensar e produzir o Projeto de Conclusão de Curso.</td></tr></tbody>
+        </table>
+
+        <!-- Administração -->
+        <table id="tabela_adm_1" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Desenv. das Ações de Marketing e dos Processos Comerciais</td><td>Estudo de estratégias de marketing, vendas, atendimento ao cliente e análise de mercado para 
+            impulsionar resultados comerciais.</td></tr></tbody>
+            <tbody><tr><td>Legislação Empresarial</td><td>Conhecimento das leis que regem o funcionamento das empresas como Código Civil, direitos do consumidor, trabalhistas e societários.</td></tr></tbody>
+            <tbody><tr><td>Planej. e Organização de Rotinas Administrativas</td><td>Organização de atividades administrativas (arquivos, documentos, fluxo de trabalho e agendamento).</td></tr></tbody>
+            <tbody><tr><td>Projeto Integrador I</td><td>Atividade prática de integração dos conhecimentos adquiridos nas disciplinas, por meio do desenv. de projetos.</td></tr></tbody>
+            <tbody><tr><td>Aplicativos Informatizados</td><td>Uso de softwares de escritório (Word, Excel, PowerPoint) e tecnologias aplicadas à administração e gestão empresarial.</td></tr></tbody>
+        </table>
+        <table id="tabela_adm_2" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Custos, Processos e Operações Contábeis</td><td>Estudo de princípios contábeis, escrituração, apuração de custos e processos de controle financeiro em uma empresa.</td></tr></tbody>
+            <tbody><tr><td>Planej. e Organização de Rotinas de Depto. Pessoal</td><td>Execução das rotinas trabalhistas: admissão, folha de pagamento, encargos sociais e rescisão contratual.</td></tr></tbody>
+            <tbody><tr><td>Administração da Produção e Serviços</td><td>Planejamento, controle e organização dos processos produtivos e de prestação de serviços com foco em eficiência.</td></tr></tbody>
+            <tbody><tr><td>Administração de Recursos Humanos</td><td>Gestão de pessoas, recrutamento e treinamento, desenvolvimento e avaliação de desempenho de colaboradores.</td></tr></tbody>
+            <tbody><tr><td>Projeto Integrador II</td><td>Desenvolvimento de um projeto prático que aplica os conhecimentos das disciplinas técnicas da 2ª série.</td></tr></tbody>
+        </table>
+        <table id="tabela_adm_3" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Administração Financeira e Orçamentária</td><td>Controle financeiro, elaboração de orçamentos, fluxo de caixa, investimentos e análise de indicadores financeiros.</td></tr></tbody>
+            <tbody><tr><td>Desenv. de Modelos de Negócios</td><td>Criação e estruturação de modelos de negócio com base em propostas de valor, segmentação de clientes e fontes de receita.</td></tr></tbody>
+            <tbody><tr><td>Estudos da Administração Pública</td><td>Funcionamento da gestão pública, políticas públicas e processos administrativos no setor governamental.</td></tr></tbody>
+            <tbody><tr><td>studos de Economia, Mercado e de Comércio Internacional</td><td>Análise de princípios econômicos, comportamento do mercado e relações de comércio entre países.</td></tr></tbody>
+            <tbody><tr><td>Processos Logísticos Empresariais</td><td>Gestão de cadeia de suprimentos, compras, armazenamento, transporte e distribuição de produtos com eficiência.</td></tr></tbody>
+            <tbody><tr><td>Tecnologia da Informação em Administração</td><td>Uso de sistemas de informação e tecnologia para auxiliar a gestão empresarial, como ERPs e ferramentas digitais.</td></tr></tbody>
+            <tbody><tr><td>Planej. de TCC</td><td>Pensar e produzir o Projeto de Conclusão de Curso.</td></tr></tbody>
+        </table>
+
+        <!-- Prótese Dentária -->
+        <table id="tabela_protese_1" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Anatomia da Cabeça</td><td>Estudo das estruturas ósseas, musculares e nervosas da cabeça, essenciais para a confecção de próteses dentárias.</td></tr></tbody>
+            <tbody><tr><td>Equipamentos e Instrumentais Protéticos</td><td>Identificação, uso e conservação de instrumentos e equipamentos utilizados no laboratório de prótese dentária.</td></tr></tbody>
+            <tbody><tr><td>Materiais de Prótese</td><td>Conhecimento dos materiais utilizados na fabricação de próteses, suas propriedades físicas e químicas e manipulação correta.</td></tr></tbody>
+            <tbody><tr><td>Microbiologia no Laboratório de Prótese</td><td>Estudo dos micro-organismos presentes no ambiente laboratorial e medidas de biossegurança e controle de infecção.</td></tr></tbody>
+            <tbody><tr><td>Anatomia Dental I</td><td>Estudo das estruturas dentárias e funções para replicação nas próteses.</td></tr></tbody>
+        </table>
+
+        <table id="tabela_protese_2" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Anatomia Dental II</td><td>Estudo aprofundade das estruturas dentárias (coroa, raiz, esmalte, dentina), suas formas e funções para aplicação protética.</td></tr></tbody>
+            <tbody><tr><td>Oclusão I</td><td>Conceitos sobre o contato entre os dentes superiores e inferiores, fundamentais para ajuste e conforto das próteses.</td></tr></tbody>
+            <tbody><tr><td>Prótese Parcial Fixa I</td><td>Confecção e adaptação de próteses fixas (cimentadas sobre dentes ou implantes).</td></tr></tbody>
+            <tbody><tr><td>Prótese Parcial Removível I</td><td>Desenvolvimento de próteses removíveis que substituem parcialmente os dentes ausentes e são apoiadas nos dentes.</td></tr></tbody>
+            <tbody><tr><td>Prótese Total I</td><td>Confecção de próteses totais removíveis (dentaduras), incluindo a moldagem, o acabamento e até a adaptação ao paciente.</td></tr></tbody>
+            <tbody><tr><td>Resina Fotopolimerizável I</td><td>Trabalho com resinas que endurecem com luz, utilizadas em reparos e confecção de peças protéticas.</td></tr></tbody>
+        </table>
+
+        <table id="tabela_protese_3" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Oclusão II</td><td>Conceitos sobre o contato entre os dentes superiores e inferiores, fundamentais para ajuste e conforto das próteses.</td></tr></tbody>
+            <tbody><tr><td>Prótese Parcial Fixa II</td><td>Confecção e adaptação de próteses fixas, como coroas e pontes, que são cimentadas sobre dentes ou implantes.</td></tr></tbody>
+            <tbody><tr><td>Prótese Parcial Removível II</td><td>Desenvolvimento de próteses removíveis que substituem parcialmente os dentes ausentes e são apoiadas na mucosa e dentes.</td></tr></tbody>
+            <tbody><tr><td>Prótese Total II</td><td>Confecção de próteses totais removíveis, desde a moldagem até o acabamento e adaptação ao paciente.</td></tr></tbody>
+            <tbody><tr><td>Resina Fotopolimerizável II</td><td>Estudo aprofundado de utilização de resinas que endurecem com luz, aplicadas em reparos e confecção de peças protéticas.</td></tr></tbody>
+            <tbody><tr><td>Aplicativos Informatizados</td><td>Uso de softwares voltados à organização laboratorial e à criação de documentos e planilhas de controle.</td></tr></tbody>
+            <tbody><tr><td>Empreendedorismo e Administração Laboratorial</td><td>Conceitos de gestão, abertura de laboratório, controle de materiais e atendimento ao cliente.</td></tr></tbody>
+             <tbody><tr><td>Planej. de TCC</td><td>Pensar e produzir o Projeto de Conclusão de Curso.</td></tr></tbody>
+        </table>
+
+        <!-- Eletrônica -->
+        <table id="tabela_eletronica_1" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Sistemas Embarcados I</td><td>Introdução aos microcontroladores e suas aplicações em dispositivos programáveis e embarcados.</td></tr></tbody>
+            <tbody><tr><td>Desenho Informatizado em Eletrônica</td><td>Uso de softwares para elaboração de projetos eletrônicos e placas de circuito impresso (PCI).</td></tr></tbody>
+            <tbody><tr><td>Eletrônica Básica</td><td>Estudo dos fundamentos da eletrônica: corrente, tensão, resistores, capacitores e análise de circuitos.</td></tr></tbody>
+            <tbody><tr><td>Sistemas Elétricos</td><td>Compreensão dos princípios da eletricidade e aplicação em instalações e sistemas elétricos industriais e residenciais.</td></tr></tbody>
+        </table>
+
+        <table id="tabela_eletronica_2" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Dispositivos Semicondutores I</td><td>Estudo dos principais semicondutores como diodos, transistores e suas aplicações básicas em circuitos eletrônicos.</td></tr></tbody>
+            <tbody><tr><td>Sistemas Embarcados II</td><td>Desenvolvimento de sistemas com microcontroladores, incluindo sensores, atuadores e programação em linguagem C.</td></tr></tbody>
+            <tbody><tr><td>Microeletrônica</td><td>Estudo da miniaturização de componentes, circuitos integrados e fundamentos de fabricação de chips.</td></tr></tbody>
+            <tbody><tr><td>Projetos de Sistemas Eletrônicos</td><td>Planejamento e montagem de circuitos eletrônicos aplicados a projetos reais com base em demandas técnicas.</td></tr></tbody>
+            <tbody><tr><td>Sistemas Digitais</td><td>Lógica digital, portas lógicas, flip-flops, contadores e sistemas binários utilizados em dispositivos eletrônicos.</td></tr></tbody>
+        </table>
+
+        <table id="tabela_eletronica_3" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Dispositivos Semicondutores II</td><td>Aplicações avançadas de semicondutores, como amplificadores, osciladores e circuitos de potência.</td></tr></tbody>
+            <tbody><tr><td>Sistemas Embarcados III</td><td>Integração de sistemas embarcados com comunicação sem fio, Internet das Coisas (IoT) e controle remoto de dispositivos.</td></tr></tbody>
+            <tbody><tr><td>Eficiência Energética e Manutenção</td><td>Práticas para otimização do consumo de energia e manutenção preventiva de sistemas eletrônicos.</td></tr></tbody>
+            <tbody><tr><td>Redes e Sistemas de Comunicações</td><td>Estudo de redes de computadores, protocolos de comunicação e integração de sistemas com e sem fio.</td></tr></tbody>
+            <tbody><tr><td>Sistemas de Automação</td><td>Aplicação da eletrônica no controle automático de processos, utilizando sensores, relés e interfaces homem-máquina.</td></tr></tbody>
+            <tbody><tr><td>Planej. de TCC</td><td>Pensar e produzir o Projeto de Conclusão de Curso.</td></tr></tbody>
+        </table>
+
+        <!-- Ciências Exatas -->
+        <table id="tabela_exatas_1" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Estudos Avançados em Ciências Exatas e Engenharias I</td><td>Exploração de conteúdos aprofundados em matemática, física e tecnologia com foco na resolução de problemas complexos.</td></tr></tbody>
+            <tbody><tr><td>Práticas de Empreendedorismo (Atitude Empreendedora)</td><td>Desenvolvimento da mentalidade empreendedora, iniciativa, criatividade e pensamento autônomo.</td></tr></tbody>
+        </table>
+
+        <table id="tabela_exatas_2" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Estudos Avançados em Ciências Exatas e Engenharias II</td><td>Continuação dos estudos aprofundados em áreas exatas com foco em aplicações práticas e interdisciplinares.</td></tr></tbody>
+            <tbody><tr><td>Práticas de Empreendedorismo (Comunidade Empreendedora)</td><td>Compreensão do impacto social do empreendedorismo e estímulo à criação de soluções colaborativas e sustentáveis.</td></tr></tbody>
+        </table>
+
+        <table id="tabela_exatas_3" class="tabelaOculta">
+            <thead><tr><th>Componente</th><th>Conteúdo</th></tr></thead>
+            <tbody><tr><td>Estudos Avançados em Ciências Exatas e Engenharias III</td><td>Aprofundamento final com integração de conhecimentos em projetos voltados à engenharia, robótica e tecnologia.</td></tr></tbody>
+            <tbody><tr><td>Práticas de Empreendedorismo (Empreendedorismo para o Mundo)</td><td>Foco em empreendedorismo global, inovação tecnológica e impactos econômicos e ambientais das soluções propostas.</td></tr></tbody>
+        </table>
+
+    </div>
+</div>
+        <div class="mainSection suggestionSection">
+                    <h2>Dificuldade com o conteúdo?</h2>
+                    <p>Não se preocupe, a equipe Inova conta com alunos preparados para te ajudar. Entre em contato conosco para saber mais, enviando seu nome, curso e série</p>                  
+                    <button onclick="window.location.href='mailto:rebeca.fadil@etec.sp.gov.br?subject=Assunto:%20Ajuda%20com%20os%20estudos&body=Olá,%20Inovers.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto]%20com%20vocês.'">Enviar pedido de socorro.</button>
+                </div>
+        <div class="mainSection suggestionSection">
+                    <h2>Como aprender em casa</h2>
+                    <p>Se preferir, temos uma seleção dos melhores professores para cada matéria, com aulas disponíveis no Youtube.</p>            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Matéria</th>
+                                <th>Professor(a)</th>
+                                <th>Canal/Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Multidisciplinar</td>
+                                <td>A variar da matéria</td>
+                                <td><a href="https://www.youtube.com/@descomplica">Descomplica</a></td>
+                            </tr>
+                            <tr>
+                                <td>Multidisciplinar</td>
+                                <td>A variar da matéria</td>
+                                <td><a href="https://www.youtube.com/@TodaMateriaOficial">TodaMatéria</a></td>
+                            </tr>
+                            <tr>
+                                <td>Multidisciplinar</td>
+                                <td>A variar da matéria</td>
+                                <td><a href="https://www.youtube.com/@CursoEnemGratuito">Cursno Enem Gratuito</a></td>
+                            </tr>
+                            <tr>
+                                <td>Multidisciplinar</td>
+                                <td>Iberê e Mari</td>
+                                <td><a href="https://www.youtube.com/@manualdomundo">ManualdoMundo</a></td>
+                            </tr>
+                            <tr>
+                                <td>Física</td>
+                                <td>Marcelo Boaro</td>
+                                <td><a href="https://www.youtube.com/@professorboaro">Professor Boaro</a></td>
+                            </tr>
+                            <tr>
+                                <td>História</td>
+                                <td>Débora Aladim</td>
+                                <td><a href="https://www.youtube.com/@deboraaladim">Debora Aladim</a></td>
+                            </tr>
+                            <tr>
+                                <td>Química</td>
+                                <td>Marcus Ennes</td>
+                                <td><a href="https://www.youtube.com/c/QU%C3%8DMICADOMONSTRO">Química do Monstro</a></td>
+                            </tr>
+                            <tr>
+                                <td>Biologia</td>
+                                <td>Samuel Cunha</td>
+                                <td><a href="https://www.youtube.com/@professorsamuelcunha">Biologia com Samuel Cunha</a></td>
+                            </tr>
+                            <tr>
+                                <td>Matemática</td>
+                                <td>Sandro Curió</td>
+                                <td><a href="https://www.youtube.com/@sandrocuriodicasdemat">DicasdeMat Sandro Curió</a></td>
+                            </tr>
+                            <tr>
+                                <td>Matemática</td>
+                                <td>Paulo Pereira</td>
+                                <td><a href="https://www.youtube.com/@equacionamatematica">Equaciona Com Paulo Pereira</a></td>
+                            </tr>
+                            <tr>
+                                <td>Língua Portuguesa</td>
+                                <td>Noslen Borges</td>
+                                <td><a href="https://www.youtube.com/@ProfessorNoslen">Professor Noslen</a></td>
+                            </tr>
+                            <tr>
+                                <td>Língua Inglesa</td>
+                                <td>Kenny Pires</td>
+                                <td><a href="https://www.youtube.com/@PROFESSORKENNYOFICIAL">Professor Kenny</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+
+        <footer>
+            <div class="footerContent">
+                <p>&copy; 2025 Portal Etec. Estamos sempre trabalhando para melhorar a experiência escolar de todos os
+                    alunos.</p>
+            </div>
+        </footer>
+        <script src="assets/js/apoioEduc.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,348 @@
+main {
+    background-color: #ecf0f1;
+}
+
+main .mainContent {
+    padding: 0.5rem 1rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mainContent h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #2c3e50;
+}
+
+.mainSection {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.mainContent .mainDescription {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #062442;
+}
+
+.mainSection ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.875rem;
+}
+
+.mainSection ul li {
+    font-size: 1.25rem;
+    color: #062442;
+}
+.mainSection p {
+    font-size: 1.25rem;
+    color: #062442;
+}
+
+iframe {
+    margin: auto;
+    width: 95%;
+}
+
+@media screen and (max-width: 1280px) {
+    .mainDescription {
+        text-align: center;
+    }
+
+    .mainSection ul {
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .mainSection ul li {
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+/* Estilos para a área de interclasses */
+#interclasses {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.amistososContainer tr:hover {
+  background-color: #ddd;
+}main .mainContent {
+    padding: 0.5rem 1rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mainContent h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+h4{
+    color: #2c3e50;
+}
+.amistososContainer, .campeoesContainer {
+  flex-direction: column;
+}
+
+.amistososContainer table {
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 120px;
+}
+
+.amistososContainer th, td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.amistososContainer th {
+  background-color: #7324e1;
+  color: white;
+}
+
+.amistososContainer tr:hover {
+  background-color: #ddd;
+}
+.amistososContainer p{
+   font-size: 23px;
+    color: #2c3e50;
+}
+.infoAluno {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.amistososContainer button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7324e1;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.amistososContainer button:hover {
+    background-color: #8753d1;
+}
+
+.amistososContainer h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.amistososContainer img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+/* Estilos adicionais para as células, para melhor contraste */
+#amistosos-tabela td {
+  color: #333;
+}
+
+.btn-inter {
+  font-size: 18px;
+  margin: 10px;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#modalidade {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Estilos para a área de amistosos */
+#amistosos {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+#amistosos form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#amistosos label {
+  font-size: 16px;
+}
+
+#amistosos select,
+#amistosos input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#amistosos button {
+  font-size: 18px;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#amistosos button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a área de interclasses */
+#interclasses {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#interclasses h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#interclasses table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#interclasses th,
+#interclasses td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#interclasses th {
+  background-color: #f4f4f4;
+}
+
+#interclasses tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+        .recommendation-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .recommendation-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            border-left: 5px solid #7324e1;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .recommendation-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .item-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .item-text {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+            font-size: 18px;
+            color: #495057;
+            font-weight: 500;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
+        }
+        
+        .btn-custom {
+            background-color: #7324e1;
+            border: none;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(115, 36, 225, 0.2);
+        }
+        
+        .btn-custom:hover {
+            background-color: #5d1db4;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(115, 36, 225, 0.3);
+        }
+        
+        .btn-custom i {
+            margin-left: 8px;
+            font-size: 14px;
+        }

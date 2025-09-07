@@ -1,0 +1,21 @@
+footer {
+    background-color: #7324e1;
+}
+
+.footerContent {
+    padding: 0.725rem;
+    max-width: 1280px;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.footerContent p {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,160 @@
+main {
+    background-color: #ecf0f1;
+}
+
+main .mainContent {
+    padding: 0.5rem 1rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mainContent h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #2c3e50;
+}
+
+.mainSection {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.mainSection p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #062442;
+}
+
+.mainSection ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.875rem;
+}
+
+.mainSection li {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #062442;
+}
+
+
+ /* Foto de câmera que abre o modal */
+    .camera-trigger {
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .camera-trigger:hover {
+      transform: scale(1.05);
+    }
+
+    /* Moldura da câmera (modal) */
+    .camera-modal .modal-content {
+      border-radius: 30px;
+      background: #222;
+      position: relative;
+      padding: 2px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+
+    /* Lente no modal */
+    .camera-lens {
+      border: 5px solid #444;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle, #666, #111);
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+
+    /* Ajustando imagens do carousel */
+    .camera-carousel img {
+      height: 380px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    /* Lente clicável */
+  .camera-lens {
+  position: absolute;
+  top: 20px; /* ajuste conforme o design da câmera */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  cursor: pointer;
+  z-index: 10;
+}
+/*Parte da equipe*/
+.membros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.membro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+.membro h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.membro img {
+    width: auto;
+    height: 120px;
+    border-radius: 8px;
+}
+/* Modal */
+.openModalBtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #9e34db;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.openModalBtn:hover {
+    background-color: #8c2ae1;
+}

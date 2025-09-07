@@ -1,0 +1,244 @@
+main {
+    background-color: #ecf0f1;
+}
+
+main .mainContent {
+    padding: 0.5rem 1rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mainContent h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+h4{
+    color: #2c3e50;
+}
+.mainSection {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.amistososContainer, .campeoesContainer {
+  flex-direction: column;
+}
+
+.amistososContainer table {
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.amistososContainer th, td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.amistososContainer th {
+  background-color: #7324e1;
+  color: white;
+}
+
+.amistososContainer tr:hover {
+  background-color: #ddd;
+}
+.amistososContainer p{
+   font-size: 23px;
+    color: #2c3e50;
+}
+.infoAluno {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.amistososContainer button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7324e1;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.amistososContainer button:hover {
+    background-color: #8753d1;
+}
+
+.amistososContainer h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.amistososContainer img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+/* Estilos adicionais para as células, para melhor contraste */
+#amistosos-tabela td {
+  color: #333;
+}
+
+.btn-inter {
+  font-size: 18px;
+  margin: 10px;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#modalidade {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Estilos para a área de amistosos */
+#amistosos {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+#amistosos h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#amistosos ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#amistosos ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#amistosos form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#amistosos label {
+  font-size: 16px;
+}
+
+#amistosos select,
+#amistosos input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#amistosos button {
+  font-size: 18px;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#amistosos button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a área de interclasses */
+#interclasses {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#interclasses h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#interclasses table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#interclasses th,
+#interclasses td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#interclasses th {
+  background-color: #f4f4f4;
+}
+
+#interclasses tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Estilo clubes */
+.club-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6fa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #062442;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.club-card:hover {
+  background-color: #7324e188;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

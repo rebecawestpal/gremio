@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Portal Grêmio Escolar</title>
+        <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="assets/css/components/Globals.css">
+        <link rel="stylesheet" href="assets/css/components/Header.css">
+        <link rel="stylesheet" href="assets/css/components/Footer.css">
+        <link rel="stylesheet" href="assets/css/pages/esportes.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="headerCont">
+                <a href="index.html">
+                    <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio" width="96">
+                </a>
+                <nav class="menuNav">
+                    <a href="quemSomos.html" class="menuItens">Quem Somos</a>
+                    <a href="calendario.html" class="menuItens">Calendário</a>
+                    <a href="index.html" class="menuItens">Esportes e Clubes</a>
+                    <a href="biblioteca.html" class="menuItens">Biblioteca</a>
+                    <a href="apoioEduc.html" class="menuItens">Apoio Escolar</a>
+                    <a href="acoes.html" class="menuItens">Ações</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+    <div class="mainContent">
+                <div class="mainSection amistososContainer">
+                    <h2>Amistosos Marcados</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sala/Curso</th>
+                                <th>Data</th>
+                                <th>Horário</th>
+                                <th>Modalidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3°Eletrônica X 2°Administração</td>
+                                <td>24/03</td>
+                                <td>12:15 às 13:00</td>
+                                <td>Vôlei</td>
+                            </tr>
+                            <tr>
+                                <td>1°Desenv. Sistemas A X 2°Desenv. Sistemas B</td>
+                                <td>01/09</td>
+                                <td>12:15 às 13:00</td>
+                                <td>Vôlei</td>
+                            </tr>
+                            <tr>
+                                <td>1°Desenv. Sistemas B X 1°Edificações </td>
+                                <td>30/03</td>
+                                <td>11:25 às 12:15</td>
+                                <td>Vôlei</td>
+                            </tr>
+                        </tbody>
+  </table>
+                </div>
+                <div class="mainSection amistososContainer">
+                    <h2>Agendar Amistoso</h2>
+                    <h4>Diretor de esportes - Davi</h4>
+                    <div class="infoAluno">
+                        <img src="assets/img/davi.jpeg">
+                    <p>Tenha previamente decidido a modalidade, quem será o time adversário, o dia e a hora (Aceitos pelo time adversário). <br>
+                    Envie os dados completos e quem será o professor de Educação Física responsável, se identificando com nome e sala.<br>
+                    Pedimos até três dias úteis para retornar. Obrigado!</p>
+                    </div>
+                    <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517991065879?text=Olá,%20Davi.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Agendar Amistoso</button>
+                </div>
+                <div class="mainSection amistososContainer">
+  <h2>Clubes Extracurriculares</h2>
+  <p>
+    Procurando um projeto artístico/cultural? Nossa Etec tem!
+  </p>
+
+  <div style=" display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 2rem; width: 100%;">
+    <a href="https://chat.whatsapp.com/EzEQ0M91H1e20calSMoTzH" class="club-card">
+      🎵 <strong>Clube de Música</strong>
+    </a>
+    <a href="" class="club-card">
+      💃 <strong>Clube de Dança - Philiaders</strong>
+    </a>
+    <a href="https://chat.whatsapp.com/GlXXeFJ9MDXLwucRZcC8JE?mode=ems_wa_t" class="club-card">
+      📸 <strong>Clube de Fotografia</strong>
+    </a>
+    <a href="" class="club-card">
+      🎭 <strong>Clube de Teatro</strong>
+    </a>
+    <a href="" class="club-card">
+      ✍️ <strong>Clube de Escrita - Prosa e Poesia</strong>
+    </a>
+  </div>
+  </div>
+            </div>                
+        </main>
+
+        <footer>
+            <div class="footerContent">
+                <p>&copy; 2025 Portal Etec. Estamos sempre trabalhando para melhorar a experiência escolar de todos os
+                    alunos.</p>
+            </div>
+        </footer>
+        <script src="assets/js/esportes.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

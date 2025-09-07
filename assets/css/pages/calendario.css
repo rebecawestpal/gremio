@@ -1,0 +1,147 @@
+main {
+    background-color: #ecf0f1;
+}
+
+main .mainContent {
+    padding: 0.5rem 1rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.mainContent h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #2c3e50;
+}
+.mainSection {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.mainContent a {
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mainContent a:hover {
+    text-decoration: underline;
+}
+
+.mainSection button{
+    font-size: 20px;
+}
+
+.eventosContainer ul {
+    list-style-type: none;
+    gap: 100px;
+}
+
+.eventosContainer ul li {
+    font-size: 20px;
+    color: #34495e;
+}
+
+@media screen and (max-width: 1280px) {
+    main {
+        display: block;
+        height: 100%;
+    }
+
+    .eventosContainer ul {
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .eventosContainer ul li {
+        text-align: center;
+    }
+
+    .mainContent p {
+        text-align: center;
+    }
+
+    .mainContent a {
+        text-align: center;
+    }
+}
+
+.calendarControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.calendarControls button {
+    background-color: #7324e1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendarControls button:hover {
+    background-color: #5a1ab2;
+}
+
+#monthYear {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.calendarGrid .header {
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.calendarGrid div {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.calendarGrid .today {
+    background-color: #7324e1;
+    color: white;
+    font-weight: bold;
+}
+
+.calendarGrid .event-day {
+    background-color: #945ae5;
+    color: white;
+    font-weight: bold;
+}
+.btn-custom {
+  background-color: #7324e1;
+  border-color: #7324e1;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #5d1db4; /* tom mais escuro no hover */
+  border-color: #5d1db4;
+  color: #fff;
+}
