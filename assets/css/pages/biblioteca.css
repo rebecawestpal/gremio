@@ -589,22 +589,3 @@ h4{
         font-size: 0.8rem;
     }
 }
-
-/* Estilo para quando a tabela precisar rolar horizontalmente */
-.table-container::-webkit-scrollbar {
-    height: 8px;
-}
-
-.table-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.table-container::-webkit-scrollbar-thumb {
-    background: #7324e1;
-    border-radius: 4px;
-}
-
-.table-container::-webkit-scrollbar-thumb:hover {
-    background: #5d1db4;
-}
