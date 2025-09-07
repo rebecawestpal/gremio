@@ -242,3 +242,228 @@ h4{
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+/* Header Responsivo */
+@media (max-width: 1024px) {
+    .menuItens {
+        font-size: 15px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 880px) {
+    .menuItens {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerCont {
+        padding: 0.5rem;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .menuNav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .menuItens {
+        font-size: 14px;
+        margin-right: 0;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .imgLogo {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerCont {
+        padding: 0.5rem 0;
+    }
+    
+    .imgLogo {
+        height: 50px;
+        width: 100px;
+    }
+    
+    .menuNav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .menuItens {
+        font-size: 1rem;
+    }
+}
+
+/* Conteúdo Principal Responsivo */
+@media screen and (max-width: 1024px) {
+    .mainContent h2 {
+        font-size: 1.8rem;
+    }
+    
+    .amistososContainer p {
+        font-size: 1.1rem;
+    }
+    
+    .amistososContainer h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        padding: 0.5rem;
+    }
+    
+    .mainSection {
+        padding: 1.2rem;
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+    
+    .mainContent h2 {
+        font-size: 1.6rem;
+    }
+    
+    .amistososContainer table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .amistososContainer th, 
+    .amistososContainer td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .amistososContainer p {
+        font-size: 1rem;
+    }
+    
+    .amistososContainer h4 {
+        font-size: 1.2rem;
+    }
+    
+    .infoAluno {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .amistososContainer img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-width: 150px;
+    }
+    
+    .amistososContainer button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    
+    /* Ajuste para os cards de clubes */
+    .club-card {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainContent h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mainSection {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .amistososContainer th, 
+    .amistososContainer td {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .amistososContainer p {
+        font-size: 0.95rem;
+    }
+    
+    .amistososContainer h4 {
+        font-size: 1.1rem;
+    }
+    
+    .infoAluno {
+        padding: 0.8rem;
+    }
+    
+    .amistososContainer img {
+        max-width: 120px;
+    }
+    
+    .amistososContainer button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+    
+    /* Ajuste para grid de clubes */
+    .club-card {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tabela responsiva para mobile */
+@media screen and (max-width: 640px) {
+    .amistososContainer table {
+        display: block;
+        width: 100%;
+    }
+    
+    .amistososContainer table thead {
+        display: none;
+    }
+    
+    .amistososContainer table tbody, 
+    .amistososContainer table tr, 
+    .amistososContainer table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .amistososContainer table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .amistososContainer table td {
+        text-align: right;
+        padding: 0.5rem;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .amistososContainer table td:last-child {
+        border-bottom: none;
+    }
+    
+    .amistososContainer table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+}

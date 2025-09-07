@@ -48,32 +48,6 @@ main .mainContent {
     font-size: 20px;
     color: #34495e;
 }
-
-@media screen and (max-width: 1280px) {
-    main {
-        display: block;
-        height: 100%;
-    }
-
-    .eventosContainer ul {
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-
-    .eventosContainer ul li {
-        text-align: center;
-    }
-
-    .mainContent p {
-        text-align: center;
-    }
-
-    .mainContent a {
-        text-align: center;
-    }
-}
-
 .calendarControls {
     display: flex;
     justify-content: center;
@@ -144,4 +118,179 @@ main .mainContent {
   background-color: #5d1db4; /* tom mais escuro no hover */
   border-color: #5d1db4;
   color: #fff;
+}
+
+/* Header Responsivo */
+@media (max-width: 1024px) {
+    .menuItens {
+        font-size: 15px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 880px) {
+    .menuItens {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerCont {
+        padding: 0.5rem;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .menuNav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .menuItens {
+        font-size: 14px;
+        margin-right: 0;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .imgLogo {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerCont {
+        padding: 0.5rem 0;
+    }
+    
+    .imgLogo {
+        height: 50px;
+        width: 100px;
+    }
+    
+    .menuNav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .menuItens {
+        font-size: 1rem;
+    }
+}
+
+/* Conteúdo Principal Responsivo */
+@media screen and (max-width: 1024px) {
+    .mainContent h2 {
+        font-size: 2rem;
+    }
+    
+    .eventosContainer ul li {
+        font-size: 1.1rem;
+    }
+    
+    #monthYear {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        padding: 0.5rem;
+    }
+    
+    .mainSection {
+        padding: 1.2rem;
+        margin: 1rem 0;
+    }
+    
+    .mainContent h2 {
+        font-size: 1.8rem;
+    }
+    
+    .eventosContainer ul li {
+        font-size: 1rem;
+    }
+    
+    .calendarControls {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    #monthYear {
+        order: -1;
+        width: 100%;
+    }
+    
+    .calendarGrid {
+        gap: 0.25rem;
+        padding: 0.75rem;
+    }
+    
+    .calendarGrid div {
+        min-height: 40px;
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+    
+    .calendarGrid .header {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-custom {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainContent h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mainSection {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .eventosContainer ul li {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    #monthYear {
+        font-size: 1.2rem;
+        min-width: auto;
+    }
+    
+    .calendarControls button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .calendarGrid {
+        padding: 0.5rem;
+    }
+    
+    .calendarGrid div {
+        min-height: 35px;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+    
+    .calendarGrid .header {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+    
+    .btn-custom {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
 }

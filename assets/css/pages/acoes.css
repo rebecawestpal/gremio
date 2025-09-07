@@ -106,23 +106,210 @@ main .mainContent {
     width: 100%;
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
-    padding: 0.725rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1.125rem;
-    outline: none;
-    color: #062442;
+/* Header Responsivo */
+@media (max-width: 1024px) {
+    .menuItens {
+        font-size: 15px;
+        margin-right: 8px;
+    }
 }
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 880px) {
+    .menuItens {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerCont {
+        padding: 0.5rem;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .menuNav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .menuItens {
+        font-size: 14px;
+        margin-right: 0;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .imgLogo {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerCont {
+        padding: 0.5rem 0;
+    }
+    
+    .imgLogo {
+        height: 50px;
+        width: 100px;
+    }
+    
+    .menuNav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .menuItens {
+        font-size: 1rem;
+    }
+}
+
+/* Conteúdo Principal Responsivo */
+@media screen and (max-width: 1024px) {
+    .mainContent h2 {
+        font-size: 1.8rem;
+    }
+    
+    .projectCard {
+        height: 320px;
+    }
+    
+    .projectCard img {
+        width: 180px;
+    }
+    
+    .projectCard h3 {
+        font-size: 1.3rem;
+    }
+    
+    .donateSection p, .suggestionSection p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        padding: 0.5rem;
+    }
+    
+    .mainSection {
+        padding: 1.2rem;
+        margin: 1rem 0;
+    }
+    
+    .mainContent h2 {
+        font-size: 1.6rem;
+    }
+    
     .projectsContainer {
         flex-direction: column;
+        gap: 1.5rem;
     }
-
+    
+    .projectCard {
+        height: auto;
+        max-width: 400px;
+        padding: 1.5rem;
+    }
+    
+    .projectCard img {
+        width: 160px;
+    }
+    
+    .projectCard h3 {
+        font-size: 1.2rem;
+    }
+    
+    .projectCard p {
+        font-size: 0.95rem;
+    }
+    
+    .donateSection p, .suggestionSection p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .donateSection button, .suggestionSection button {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.5rem;
+    }
+    
     #qrCodeContainer img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainContent h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mainSection {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .projectCard {
+        padding: 1rem;
+        max-width: 100%;
+    }
+    
+    .projectCard img {
+        width: 140px;
+    }
+    
+    .projectCard h3 {
+        font-size: 1.1rem;
+    }
+    
+    .projectCard p {
+        font-size: 0.9rem;
+    }
+    
+    .donateSection p, .suggestionSection p {
+        font-size: 1rem;
+    }
+    
+    .donateSection button, .suggestionSection button {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
         width: 100%;
+        max-width: 250px;
+    }
+    
+    #qrCodeContainer img {
+        width: 200px;
+    }
+}
+
+/* Melhorias para visualização em telas muito pequenas */
+@media screen and (max-width: 360px) {
+    .projectCard img {
+        width: 120px;
+    }
+    
+    .projectCard h3 {
+        font-size: 1rem;
+    }
+    
+    .projectCard p {
+        font-size: 0.85rem;
+    }
+    
+    .donateSection p, .suggestionSection p {
+        font-size: 0.9rem;
+    }
+    
+    .donateSection button, .suggestionSection button {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    #qrCodeContainer img {
+        width: 180px;
     }
 }

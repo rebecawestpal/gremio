@@ -18,3 +18,24 @@ function mostrarClassificacao() {
         });
     }
 }
+// Adicionar data-labels para a tabela em mobile
+    document.addEventListener('DOMContentLoaded', function() {
+        const tableCells = document.querySelectorAll('.amistososContainer table td');
+        const headers = ['Sala/Curso', 'Data', 'Horário', 'Modalidade'];
+        
+        tableCells.forEach((cell, index) => {
+            const headerIndex = index % 4;
+            cell.setAttribute('data-label', headers[headerIndex]);
+        });
+        
+        // Adicionar feedback visual ao botão
+        const button = document.querySelector('.amistososContainer button');
+        if (button) {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.97)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 200);
+            });
+        }
+    });
