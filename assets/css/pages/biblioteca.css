@@ -49,11 +49,6 @@ main .mainContent {
     font-size: 1.25rem;
     color: #062442;
 }
-
-iframe {
-    margin: auto;
-    width: 95%;
-}
 /* Estilos para a área de interclasses */
 #interclasses {
   background-color: #fff;
@@ -89,10 +84,6 @@ h4{
   border-radius: 8px;
   overflow: hidden;
   margin-left: 120px;
-}
-.iframe {
-    width: 1010px;
-    height: 700px;
 }
 
 .amistososContainer th, td {
@@ -425,16 +416,6 @@ h4{
 .amistososContainer tr:hover {
     background-color: #f5f5f5;
 }
-
-/* Iframe responsivo */
-iframe {
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-}
-
 /* Media Queries para responsividade */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
@@ -443,10 +424,6 @@ iframe {
     
     .mainDescription, .mainSection p, .mainSection ul li {
         font-size: 1.1rem;
-    }
-    
-    iframe {
-        height: 600px;
     }
     
     .item-text {
@@ -475,10 +452,6 @@ iframe {
     .mainDescription, .mainSection p, .mainSection ul li {
         font-size: 1rem;
         text-align: left;
-    }
-    
-    iframe {
-        height: 400px;
     }
     
     .item-content {
@@ -570,10 +543,6 @@ iframe {
         gap: 1rem;
     }
     
-    iframe {
-        height: 300px;
-    }
-    
     .recommendation-item {
         padding: 15px;
     }
@@ -605,10 +574,6 @@ iframe {
 
 /* Melhorias para telas muito pequenas */
 @media screen and (max-width: 360px) {
-    iframe {
-        height: 250px;
-    }
-    
     .amistososContainer table {
         min-width: 280px;
     }
