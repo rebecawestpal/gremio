@@ -402,7 +402,7 @@ h4{
 .amistososContainer th, 
 .amistososContainer td {
     padding: 1rem;
-    text-align: left;
+    text-align: right;
     border: 1px solid #ddd;
 }
 
@@ -410,7 +410,7 @@ h4{
     background-color: #7324e1;
     color: white;
     position: sticky;
-    left: 0;
+    right: 0;
 }
 
 .amistososContainer tr:hover {
@@ -451,7 +451,7 @@ h4{
     
     .mainDescription, .mainSection p, .mainSection ul li {
         font-size: 1rem;
-        text-align: left;
+        text-align: right;
     }
     
     .item-content {
@@ -525,9 +525,9 @@ h4{
     .amistososContainer table td::before {
         content: attr(data-label);
         position: absolute;
-        left: 0.8rem;
+        right: 0.8rem;
         font-weight: bold;
-        text-align: left;
+        text-align: right;
         color: #7324e1;
     }
 }
@@ -563,7 +563,7 @@ h4{
     }
     
     .amistososContainer table td::before {
-        left: 0.6rem;
+        right: 0.6rem;
         font-size: 0.9rem;
     }
     
@@ -585,7 +585,7 @@ h4{
     }
     
     .amistososContainer table td::before {
-        left: 0.5rem;
+        right: 0.5rem;
         font-size: 0.8rem;
     }
 }
