@@ -388,7 +388,52 @@ h4{
     }
 }
 
-/* ===== RESPONSIVIDADE DA PÁGINA BIBLIOTECA ===== */
+/* Container para tabela responsiva */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    -webkit-overflow-scrolling: touch; /* Suaviza rolagem no iOS */
+}
+
+/* Estilos da tabela */
+.amistososContainer table {
+    width: 100%;
+    min-width: 500px; /* Largura mínima para manter a legibilidade */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.amistososContainer th, 
+.amistososContainer td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.amistososContainer th {
+    background-color: #7324e1;
+    color: white;
+    position: sticky;
+    left: 0;
+}
+
+.amistososContainer tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Iframe responsivo */
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* Media Queries para responsividade */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
         font-size: 2rem;
@@ -404,6 +449,10 @@ h4{
     
     .item-text {
         font-size: 17px;
+    }
+    
+    .amistososContainer table {
+        min-width: 450px;
     }
 }
 
@@ -428,7 +477,6 @@ h4{
     
     iframe {
         height: 400px;
-        width: 100% !important;
     }
     
     .item-content {
@@ -454,22 +502,19 @@ h4{
         padding: 10px 20px;
     }
     
-    /* CORREÇÃO DA TABELA DE HORÁRIOS */
-    .amistososContainer table {
-        min-width: 100%;
-        margin-left: 0 !important;
-    }
-    
     .amistososContainer th, 
     .amistososContainer td {
         padding: 0.8rem;
         font-size: 0.9rem;
     }
     
+    .amistososContainer table {
+        min-width: 400px;
+    }
+    
     /* Transformar tabela em cards em mobile */
     .amistososContainer table {
         display: block;
-        width: 100%;
     }
     
     .amistososContainer table thead {
@@ -487,8 +532,6 @@ h4{
         border: 1px solid #ddd;
         border-radius: 8px;
         overflow: hidden;
-        background: white;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     
     .amistososContainer table td {
@@ -496,9 +539,8 @@ h4{
         text-align: right;
         padding: 0.8rem;
         position: relative;
-        padding-left: 45%;
         border: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #ddd;
     }
     
     .amistososContainer table td:last-child {
@@ -512,10 +554,6 @@ h4{
         font-weight: bold;
         text-align: left;
         color: #7324e1;
-        background-color: #f8f9fa;
-        padding: 0.3rem 0.6rem;
-        border-radius: 4px;
-        width: 40%;
     }
 }
 
@@ -549,14 +587,13 @@ h4{
         font-size: 0.8rem;
     }
     
-    .amistososContainer table td {
-        padding-left: 40%;
+    .amistososContainer table {
+        min-width: 320px;
     }
     
     .amistososContainer table td::before {
         left: 0.6rem;
-        font-size: 0.8rem;
-        width: 35%;
+        font-size: 0.9rem;
     }
     
     .amistososContainer td:nth-child(2) {
@@ -564,30 +601,26 @@ h4{
     }
 }
 
+/* Melhorias para telas muito pequenas */
 @media screen and (max-width: 360px) {
     iframe {
         height: 250px;
     }
     
-    .amistososContainer table td {
-        padding-left: 45%;
+    .amistososContainer table {
+        min-width: 280px;
+    }
+    
+    .amistososContainer th, 
+    .amistososContainer td {
+        padding: 0.5rem;
+        font-size: 0.75rem;
     }
     
     .amistososContainer table td::before {
         left: 0.5rem;
-        font-size: 0.75rem;
-        width: 40%;
+        font-size: 0.8rem;
     }
-}
-
-/* ESTILOS ESPECÍFICOS PARA A PÁGINA BIBLIOTECA */
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-    margin: 1.5rem 0;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Estilo para quando a tabela precisar rolar horizontalmente */
@@ -607,114 +640,4 @@ h4{
 
 .table-container::-webkit-scrollbar-thumb:hover {
     background: #5d1db4;
-}
-
-/* Estilos da tabela */
-.amistososContainer table {
-    width: 100%;
-    min-width: 500px;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.amistososContainer th, 
-.amistososContainer td {
-    padding: 1rem;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-.amistososContainer th {
-    background-color: #7324e1;
-    color: white;
-    position: sticky;
-    top: 0;
-}
-
-.amistososContainer tr:nth-child(even) {
-    background-color: #f8f9fa;
-}
-
-.amistososContainer tr:hover {
-    background-color: #f5f5f5;
-}
-
-/* Iframe responsivo */
-iframe {
-    width: 100% !important;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    max-width: 100%;
-}
-
-/* Recomendações */
-.recommendation-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.recommendation-item {
-    margin-bottom: 25px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 12px;
-    border-left: 5px solid #7324e1;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.recommendation-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.item-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.item-text {
-    flex: 1;
-    min-width: 300px;
-    margin-right: 20px;
-    font-size: 18px;
-    color: #495057;
-    font-weight: 500;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
-}
-
-.btn-custom {
-    background-color: #7324e1;
-    border: none;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(115, 36, 225, 0.2);
-}
-
-.btn-custom:hover {
-    background-color: #5d1db4;
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(115, 36, 225, 0.3);
 }
