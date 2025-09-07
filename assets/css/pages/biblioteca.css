@@ -82,8 +82,6 @@ h4{
   border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  overflow: hidden;
-  margin-left: 120px;
 }
 
 .amistososContainer th, td {
@@ -386,7 +384,6 @@ h4{
 /* Container para tabela responsiva */
 .table-container {
     width: 100%;
-    overflow-x: auto;
     margin: 1.5rem 0;
 }
 
@@ -451,7 +448,7 @@ h4{
     
     .mainDescription, .mainSection p, .mainSection ul li {
         font-size: 1rem;
-        text-align: right;
+        text-align: left;
     }
     
     .item-content {
@@ -527,7 +524,7 @@ h4{
         position: absolute;
         right: 0.8rem;
         font-weight: bold;
-        text-align: right;
+        text-align: left;
         color: #7324e1;
     }
 }
