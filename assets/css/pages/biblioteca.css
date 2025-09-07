@@ -448,7 +448,7 @@ h4{
     
     .mainDescription, .mainSection p, .mainSection ul li {
         font-size: 1rem;
-        text-align: left;
+        text-align: center;
     }
     
     .item-content {
