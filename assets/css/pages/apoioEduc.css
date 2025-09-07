@@ -13,10 +13,11 @@ main .mainContent {
     font-weight: bold;
     font-size: 2rem;
     color: #2c3e50;
+    margin-bottom: 1.5rem;
 }
 
 .mainSection {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     padding: 1.5rem;
     background-color: #ffffff;
     border-radius: 8px;
@@ -26,60 +27,170 @@ main .mainContent {
     justify-content: center;
     gap: 1.125rem;
 }
-.suggestionSection a{
+
+.suggestionSection a {
     color: #5e1ec0;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.2s;
 }
 
-.projectsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+.suggestionSection a:hover {
+    color: #7324e1;
+    text-decoration: underline;
 }
 
-.projectCard {
-    width: 100%;
-    height: 350px;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+/* Formulário e seleção */
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
+    margin-bottom: 1rem;
 }
 
-.projectCard img {
-    width: 200px;
-    border-radius: 8px;
-}
-
-.projectCard h3 {
-    text-align: center;
-    font-size: 1.5rem;
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
     color: #2c3e50;
 }
 
-.projectCard p {
-    text-align: center;
+select {
     font-size: 1rem;
-    color: #062442;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #2c3e50;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
 }
 
-.donateSection {
-    align-items: center;
+/* Botões de módulo */
+.botoesCurso {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.donateSection p, .suggestionSection p {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #062442;
+.botoesCurso button {
+    background-color: #7324e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 120px;
 }
 
+.botoesCurso button:hover {
+    background-color: #5e1ec0;
+    transform: translateY(-2px);
+}
+
+.botoesCurso button:active {
+    transform: translateY(0);
+}
+
+/* Container para tabelas */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para tabelas de conteúdo dos cursos */
+.tabelasCurso table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: white;
+}
+
+.tabelasCurso th, 
+.tabelasCurso td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #e1e1e1;
+}
+
+.tabelasCurso th {
+    background-color: #7324e1;
+    color: white;
+    font-weight: bold;
+}
+
+.tabelasCurso tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.tabelasCurso tr:hover {
+    background-color: #f1f3f5;
+}
+
+.tabelasCurso a {
+    color: #5e1ec0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tabelasCurso a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para tabela de professores */
+.professores-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.professores-table th, 
+.professores-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #e1e1e1;
+}
+
+.professores-table th {
+    background-color: #7324e1;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+.professores-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.professores-table tr:hover {
+    background-color: #f1f3f5;
+}
+
+.professores-table a {
+    color: #5e1ec0;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background-color: #f3f0ff;
+    transition: all 0.2s;
+}
+
+.professores-table a:hover {
+    text-decoration: none;
+    background-color: #e6dcff;
+}
+
+/* Botões de ação */
 .donateSection button, .suggestionSection button {
     background-color: #7324e1;
     color: white;
@@ -92,6 +203,7 @@ main .mainContent {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s;
+    display: block;
 }
 
 .donateSection button:hover, .suggestionSection button:hover {
@@ -99,143 +211,12 @@ main .mainContent {
     color: #7324e1;
 }
 
-#qrCodeContainer {
-    display: none;
-}
-
-#qrCodeContainer img {
-    width: 300px;
-}
-
-.suggestionSection button {
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
-    height: 100px;
-    padding: 0.725rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1.125rem;
-    outline: none;
-    color: #062442;
-}
-
-select {
-    font-size: 1rem;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color: #2c3e50;
-}
-
-.botoesCurso {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.botoesCurso button {
-    background-color: #7324e1;
-    color: white;
-    border: none;
-    padding: 0.5rem 1.25rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.botoesCurso button:hover {
-    background-color: #5e1ec0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 0.75rem;
-    text-align: center;
-}
-
-th {
-    background-color: #7324e1;
-    color: white;
-}
-
+/* Tabela oculta (para funcionalidade JS) */
 .tabelaOculta {
     display: none;
 }
 
-/* Header Responsivo */
-@media (max-width: 1024px) {
-    .menuItens {
-        font-size: 15px;
-        margin-right: 8px;
-    }
-}
-
-@media (max-width: 880px) {
-    .menuItens {
-        font-size: 14px;
-        margin-right: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .headerCont {
-        padding: 0.5rem;
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .menuNav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 14px;
-        margin-right: 0;
-        padding: 0.25rem 0.5rem;
-    }
-    
-    .imgLogo {
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .headerCont {
-        padding: 0.5rem 0;
-    }
-    
-    .imgLogo {
-        height: 50px;
-        width: 100px;
-    }
-    
-    .menuNav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 1rem;
-    }
-}
-
-/* Conteúdo Principal Responsivo */
+/* RESPONSIVIDADE */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
         font-size: 1.8rem;
@@ -247,7 +228,15 @@ th {
     
     .botoesCurso button {
         font-size: 0.95rem;
-        padding: 0.45rem 1.1rem;
+        padding: 0.65rem 1.25rem;
+    }
+    
+    .tabelasCurso th, 
+    .tabelasCurso td,
+    .professores-table th,
+    .professores-table td {
+        padding: 0.6rem;
+        font-size: 0.95rem;
     }
 }
 
@@ -277,64 +266,121 @@ th {
         max-width: 300px;
     }
     
-    /* Formulário e seleção */
-    form {
-        display: flex;
+    /* Botões de módulo */
+    .botoesCurso {
         flex-direction: column;
         align-items: center;
     }
     
-    label {
+    .botoesCurso button {
+        width: 100%;
+        max-width: 250px;
         margin-bottom: 0.5rem;
     }
     
-    select {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    /* Botões de módulo */
-    .botoesCurso {
-        flex-wrap: wrap;
-    }
-    
-    .botoesCurso button {
-        flex: 1;
-        min-width: 100px;
-        font-size: 0.9rem;
-        padding: 0.5rem;
-    }
-    
-    /* Tabelas */
-    table {
+    /* Transformar tabelas de conteúdo em cards em mobile */
+    .tabelasCurso table {
         display: block;
-        overflow-x: auto;
+        width: 100%;
     }
     
-    th, td {
-        font-size: 0.85rem;
-        padding: 0.5rem;
-        min-width: 120px;
+    .tabelasCurso table thead {
+        display: none;
     }
     
-    /* Ajuste para tabela de professores */
-    .suggestionSection table {
-        min-width: 600px;
+    .tabelasCurso table tbody, 
+    .tabelasCurso table tr {
+        display: block;
+        width: 100%;
     }
     
-    .suggestionSection th:nth-child(1),
-    .suggestionSection td:nth-child(1) {
-        min-width: 140px;
+    .tabelasCurso table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0.75rem;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     
-    .suggestionSection th:nth-child(2),
-    .suggestionSection td:nth-child(2) {
-        min-width: 160px;
+    .tabelasCurso table td {
+        display: block;
+        text-align: left;
+        padding: 0.75rem 0.5rem;
+        position: relative;
+        padding-left: 45%;
+        border: none;
+        border-bottom: 1px solid #eee;
     }
     
-    .suggestionSection th:nth-child(3),
-    .suggestionSection td:nth-child(3) {
-        min-width: 200px;
+    .tabelasCurso table td:last-child {
+        border-bottom: none;
+    }
+    
+    .tabelasCurso table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.5rem;
+        font-weight: bold;
+        text-align: left;
+        background-color: #7324e1;
+        color: white;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        width: 40%;
+    }
+    
+    /* Tabela de professores em mobile */
+    .professores-table {
+        min-width: 100%;
+    }
+    
+    .professores-table thead {
+        display: none;
+    }
+    
+    .professores-table tbody, 
+    .professores-table tr {
+        display: block;
+        width: 100%;
+    }
+    
+    .professores-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0.75rem;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .professores-table td {
+        display: block;
+        text-align: left;
+        padding: 0.75rem 0.5rem;
+        position: relative;
+        padding-left: 35%;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .professores-table td:last-child {
+        border-bottom: none;
+    }
+    
+    .professores-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.5rem;
+        font-weight: bold;
+        text-align: left;
+        background-color: #7324e1;
+        color: white;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        width: 30%;
     }
 }
 
@@ -362,125 +408,20 @@ th {
         font-size: 0.9rem;
     }
     
-    .botoesCurso {
-        flex-direction: column;
-        width: 100%;
+    .tabelasCurso table td,
+    .professores-table td {
+        padding-left: 40%;
+        font-size: 0.85rem;
     }
     
-    .botoesCurso button {
-        width: 100%;
-        margin-bottom: 0.5rem;
-    }
-    
-    th, td {
-        font-size: 0.8rem;
-        padding: 0.4rem;
-    }
-    
-    /* Ajuste para tabelas em mobile */
-    table {
-        min-width: 100%;
-    }
-    
-    /* Transformar tabelas de conteúdo em cards em mobile */
-    .tabelasCurso table {
-        display: block;
-        width: 100%;
-    }
-    
-    .tabelasCurso table thead {
-        display: none;
-    }
-    
-    .tabelasCurso table tbody, 
-    .tabelasCurso table tr, 
-    .tabelasCurso table td {
-        display: block;
-        width: 100%;
-    }
-    
-    .tabelasCurso table tr {
-        margin-bottom: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 0.5rem;
-    }
-    
-    .tabelasCurso table td {
-        text-align: left;
-        padding: 0.5rem;
-        position: relative;
-        border: none;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .tabelasCurso table td:last-child {
-        border-bottom: none;
-    }
-    
-    .tabelasCurso table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0.5rem;
-        font-weight: bold;
-        text-align: left;
-        background-color: #7324e1;
-        color: white;
-        padding: 0.2rem 0.5rem;
-        border-radius: 3px;
-        font-size: 0.8rem;
-    }
-    
-    /* Tabela de professores em mobile */
-    .suggestionSection table {
-        min-width: 100%;
-    }
-    
-    .suggestionSection table thead {
-        display: none;
-    }
-    
-    .suggestionSection table tbody, 
-    .suggestionSection table tr, 
-    .suggestionSection table td {
-        display: block;
-        width: 100%;
-    }
-    
-    .suggestionSection table tr {
-        margin-bottom: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 0.5rem;
-    }
-    
-    .suggestionSection table td {
-        text-align: left;
-        padding: 0.5rem;
-        position: relative;
-        border: none;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .suggestionSection table td:last-child {
-        border-bottom: none;
-    }
-    
-    .suggestionSection table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0.5rem;
-        font-weight: bold;
-        text-align: left;
-        background-color: #7324e1;
-        color: white;
-        padding: 0.2rem 0.5rem;
-        border-radius: 3px;
-        font-size: 0.8rem;
+    .tabelasCurso table td::before,
+    .professores-table td::before {
+        width: 35%;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.4rem;
     }
 }
 
-/* Melhorias para visualização em telas muito pequenas */
 @media screen and (max-width: 360px) {
     .mainContent h2 {
         font-size: 1.4rem;
@@ -495,8 +436,21 @@ th {
         padding: 0.4rem 1rem;
     }
     
-    th, td {
-        font-size: 0.75rem;
-        padding: 0.3rem;
+    .tabelasCurso table td,
+    .professores-table td {
+        padding-left: 45%;
+        font-size: 0.8rem;
+        padding: 0.5rem 0.5rem 0.5rem 45%;
+    }
+    
+    .tabelasCurso table td::before,
+    .professores-table td::before {
+        width: 40%;
+        font-size: 0.7rem;
+    }
+    
+    .professores-table a {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.85rem;
     }
 }
