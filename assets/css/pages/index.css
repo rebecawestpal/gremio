@@ -147,7 +147,7 @@ main .container {
     background-color: #8c2ae1;
 }
 
-/* Header Responsivo */
+/* Header Responsivo - Mantido igual às outras páginas */
 @media (max-width: 1024px) {
     .menuItens {
         font-size: 15px;
@@ -208,38 +208,277 @@ main .container {
     }
 }
 
-/* Conteúdo Principal Responsivo */
-@media screen and (max-width: 1024px) {
+/* Container principal responsivo */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo da seção principal (notícias) */
+main {
+    padding: 6px;
+    background-color: #ecf0f1;
+    width: 100%;
+}
+
+main .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Carousel responsivo */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.carousel-caption a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Seções de conteúdo */
+.mainSection h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.mainSection {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.mainSection p {
+    line-height: 1.6;
+    font-size: 1.25rem;
+    color: #34495e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Estilo de cada notícia */
+.section {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1.5rem 0;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.section h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Estilo da equipe */
+.membros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.membro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.membro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.membro h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: auto;
+    line-height: 1.3;
+}
+
+.membro img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Botões */
+.openModalBtn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #9e34db;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.openModalBtn:hover {
+    background-color: #8c2ae1;
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 1200px) {
+    .membros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 30px;
+    }
+    
+    .mainSection p {
+        font-size: 1.2rem;
+    }
+    
+    .section p {
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-caption {
+        bottom: 15px;
+        padding: 12px;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.3rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    
     .mainSection h2 {
         font-size: 2rem;
     }
     
-    .mainSection p {
-        font-size: 1.3rem;
-        margin-left: 80px;
-        margin-right: 80px;
+    .mainSection {
+        padding: 1.25rem;
+        margin: 1.25rem 0;
     }
     
-    .membros {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 30px;
+    .section {
+        padding: 1.5rem;
     }
     
-    .carousel-item img {
-        width: 100%;
-        height: 400px;
+    .section h2 {
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .mainContent {
-        padding: 0.5rem;
+    .membros {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
     }
     
-    .mainSection {
-        padding: 1.2rem;
-        margin: 1rem 0;
+    .membro {
+        padding: 15px;
+    }
+    
+    .membro img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .membro h3 {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-caption {
+        position: relative;
+        bottom: 0;
+        transform: none;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .carousel-item img {
+        max-height: 400px;
     }
     
     .mainSection h2 {
@@ -248,43 +487,36 @@ main .container {
     
     .mainSection p {
         font-size: 1.1rem;
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 20px;
-        text-align: center;
+        text-align: justify;
+        padding: 0 10px;
+    }
+    
+    .section {
+        padding: 1.25rem;
+        margin: 1rem 0;
+    }
+    
+    .section h2 {
+        font-size: 1.6rem;
     }
     
     .section p {
         font-size: 1rem;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 15px;
-        text-align: justify;
     }
     
-    .membros {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 20px;
+    .openModalBtn {
+        padding: 10px;
+        font-size: 0.9rem;
     }
-    
-    .membro {
-        width: 100%;
-        padding: 15px;
-    }
-    
-    .membro h3 {
-        font-size: 1.1rem;
-        height: auto;
-        margin-top: 8px;
-    }
-    
-    .membro img {
-        height: 100px;
-    }
-    
+}
+
+@media screen and (max-width: 576px) {
     .carousel-item img {
-        height: 300px;
+        max-height: 350px;
+    }
+    
+    .carousel-caption {
+        padding: 10px;
     }
     
     .carousel-caption h5 {
@@ -292,150 +524,179 @@ main .container {
     }
     
     .carousel-caption p {
-        font-size: 0.9rem;
-    }
-    
-    .openModalBtn {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .mainContent h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
+        font-size: 0.85rem;
     }
     
     .mainSection {
         padding: 1rem;
+        margin: 1rem 0;
         gap: 1rem;
+    }
+    
+    .mainSection h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
     
     .mainSection p {
         font-size: 1rem;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 15px;
-    }
-    
-    .section p {
-        font-size: 0.9rem;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
+        line-height: 1.5;
     }
     
     .membros {
         padding: 15px;
-        gap: 10px;
+        gap: 15px;
     }
     
     .membro {
         padding: 12px;
     }
     
-    .membro h3 {
-        font-size: 1rem;
-    }
-    
     .membro img {
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
     
-    .carousel-item img {
-        height: 250px;
+    .membro h3 {
+        font-size: 1.1rem;
+        margin-top: 10px;
     }
     
-    .carousel-caption {
-        padding: 5px;
+    .section {
+        padding: 1rem;
     }
     
-    .carousel-caption h5 {
-        font-size: 1rem;
+    .section h2 {
+        font-size: 1.4rem;
     }
     
-    .carousel-caption p {
-        font-size: 0.8rem;
+    .section p {
+        font-size: 0.95rem;
     }
     
     .openModalBtn {
-        font-size: 0.8rem;
-        padding: 7px;
+        padding: 8px;
+        font-size: 0.85rem;
     }
 }
 
-/* Ajustes específicos para o carousel */
-@media screen and (max-width: 768px) {
-    .carousel-caption.d-none.d-md-block {
-        display: block !important;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        bottom: 0;
-        left: 0;
-        right: 0;
+@media screen and (max-width: 400px) {
+    .carousel-item img {
+        max-height: 300px;
     }
     
-    .carousel-caption h5,
-    .carousel-caption p {
-        color: white;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    }
-}
-
-/* Melhorias para visualização em telas muito pequenas */
-@media screen and (max-width: 360px) {
     .mainSection h2 {
         font-size: 1.4rem;
     }
     
     .mainSection p {
-        font-size: 0.9rem;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding: 10px;
-    }
-    
-    .section p {
-        font-size: 0.8rem;
-    }
-    
-    .membro h3 {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     
     .membro img {
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
     
-    .carousel-item img {
-        height: 200px;
+    .membro h3 {
+        font-size: 1rem;
+    }
+    
+    .section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .section p {
+        font-size: 0.9rem;
+    }
+}
+    /* Indicadores do carousel */
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 15;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+/* Melhorias para mobile */
+@media screen and (max-width: 768px) {
+    .carousel-indicators {
+        bottom: 10px;
+    }
+    
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-indicators {
+        bottom: 8px;
+    }
+    
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+    }
+}
+
+/* Melhorias de acessibilidade e usabilidade */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.9;
+}
+
+/* Garantir que as imagens sejam responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Melhorias para telas de toque */
+@media (hover: none) {
+    .membro:hover {
+        transform: none;
+    }
+    
+    .section:hover {
+        transform: none;
     }
     
     .openModalBtn {
-        font-size: 0.75rem;
-        padding: 6px;
-    }
-}
-
-/* Ajustes para garantir que as imagens do carousel sejam responsivas */
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: cover;
-}
-
-/* Ajustes para os controles do carousel em mobile */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-}
-
-@media screen and (max-width: 768px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 15%;
+        min-height: 44px; /* Tamanho mínimo para toque */
     }
 }

@@ -108,12 +108,107 @@
 
         <footer>
             <div class="footerContent">
-                <p>&copy; 2025 Portal Etec. Estamos sempre trabalhando para melhorar a experiência escolar de todos os
-                    alunos.</p>
+                <p>&copy; 2025 Portal Etec.</p>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Adicionar feedback visual aos botões
+        const buttons = document.querySelectorAll('.openModalBtn');
+        buttons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Efeito de pressão
+                this.style.transform = 'scale(0.97)';
+                this.style.opacity = '0.9';
+                
+                setTimeout(() => {
+                    this.style.transform = '';
+                    this.style.opacity = '';
+                }, 200);
+            });
+            
+            // Melhorar acessibilidade para dispositivos touch
+            button.addEventListener('touchstart', function() {
+                this.style.backgroundColor = '#7a25b5';
+            });
+            
+            button.addEventListener('touchend', function() {
+                this.style.backgroundColor = '#9e34db';
+            });
+        });
+        
+        // Ajustar altura do carousel baseado na largura da tela
+        function adjustCarouselHeight() {
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const windowWidth = window.innerWidth;
+            
+            let newHeight = 500; // altura padrão para desktop
+            
+            if (windowWidth <= 1200) {
+                newHeight = 450;
+            }
+            
+            if (windowWidth <= 992) {
+                newHeight = 400;
+            }
+            
+            if (windowWidth <= 768) {
+                newHeight = 350;
+            }
+            
+            if (windowWidth <= 576) {
+                newHeight = 300;
+            }
+            
+            if (windowWidth <= 400) {
+                newHeight = 250;
+            }
+            
+            carouselItems.forEach(item => {
+                const img = item.querySelector('img');
+                if (img) {
+                    img.style.height = `${newHeight}px`;
+                }
+            });
+        }
+        
+        // Inicializar carousel com intervalo
+        function initCarousel() {
+            $('#carouselExample').carousel({
+                interval: 5000, // 5 segundos
+                pause: 'hover',
+                wrap: true
+            });
+            
+            // Adicionar indicadores para melhor usabilidade em mobile
+            const carousel = document.getElementById('carouselExample');
+            const items = carousel.querySelectorAll('.carousel-item');
+            let indicatorsHtml = '<ol class="carousel-indicators">';
+            
+            items.forEach((item, index) => {
+                indicatorsHtml += `<li data-target="#carouselExample" data-slide-to="${index}"${index === 0 ? ' class="active"' : ''}></li>`;
+            });
+            
+            indicatorsHtml += '</ol>';
+            carousel.insertAdjacentHTML('afterbegin', indicatorsHtml);
+        }
+        
+        // Executar funções na carga
+        adjustCarouselHeight();
+        initCarousel();
+        
+        // Reajustar no redimensionamento da janela
+        window.addEventListener('resize', adjustCarouselHeight);
+        
+        // Melhorar acessibilidade do carousel
+        document.querySelectorAll('.carousel-control-prev, .carousel-control-next').forEach(control => {
+            control.setAttribute('aria-label', control.classList.contains('carousel-control-prev') ? 'Slide anterior' : 'Próximo slide');
+            control.setAttribute('tabindex', '0');
+        });
+    });
+</script>
+      </body>
 </html>

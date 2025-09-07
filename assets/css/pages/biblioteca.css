@@ -326,7 +326,8 @@ h4{
             margin-left: 8px;
             font-size: 14px;
         }
-/* Header Responsivo */
+
+        /* Header Responsivo */
 @media (max-width: 1024px) {
     .menuItens {
         font-size: 15px;
@@ -386,6 +387,52 @@ h4{
         font-size: 1rem;
     }
 }
+
+/* Container para tabela responsiva */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    -webkit-overflow-scrolling: touch; /* Suaviza rolagem no iOS */
+}
+
+/* Estilos da tabela */
+.amistososContainer table {
+    width: 100%;
+    min-width: 500px; /* Largura mínima para manter a legibilidade */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.amistososContainer th, 
+.amistososContainer td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.amistososContainer th {
+    background-color: #7324e1;
+    color: white;
+    position: sticky;
+    left: 0;
+}
+
+.amistososContainer tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Iframe responsivo */
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
 /* Media Queries para responsividade */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
@@ -402,6 +449,10 @@ h4{
     
     .item-text {
         font-size: 17px;
+    }
+    
+    .amistososContainer table {
+        min-width: 450px;
     }
 }
 
@@ -423,6 +474,7 @@ h4{
         font-size: 1rem;
         text-align: left;
     }
+    
     iframe {
         height: 400px;
     }
@@ -455,6 +507,54 @@ h4{
         padding: 0.8rem;
         font-size: 0.9rem;
     }
+    
+    .amistososContainer table {
+        min-width: 400px;
+    }
+    
+    /* Transformar tabela em cards em mobile */
+    .amistososContainer table {
+        display: block;
+    }
+    
+    .amistososContainer table thead {
+        display: none;
+    }
+    
+    .amistososContainer table tbody, 
+    .amistososContainer table tr {
+        display: block;
+        width: 100%;
+    }
+    
+    .amistososContainer table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .amistososContainer table td {
+        display: block;
+        text-align: right;
+        padding: 0.8rem;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .amistososContainer table td:last-child {
+        border-bottom: none;
+    }
+    
+    .amistososContainer table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.8rem;
+        font-weight: bold;
+        text-align: left;
+        color: #7324e1;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -462,6 +562,7 @@ h4{
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
+    
     .mainSection {
         padding: 1rem;
         gap: 1rem;
@@ -486,12 +587,57 @@ h4{
         font-size: 0.8rem;
     }
     
-    /* Ajuste para tabela em mobile */
     .amistososContainer table {
-        min-width: 300px;
+        min-width: 320px;
+    }
+    
+    .amistososContainer table td::before {
+        left: 0.6rem;
+        font-size: 0.9rem;
     }
     
     .amistososContainer td:nth-child(2) {
         word-break: break-word;
     }
+}
+
+/* Melhorias para telas muito pequenas */
+@media screen and (max-width: 360px) {
+    iframe {
+        height: 250px;
+    }
+    
+    .amistososContainer table {
+        min-width: 280px;
+    }
+    
+    .amistososContainer th, 
+    .amistososContainer td {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .amistososContainer table td::before {
+        left: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilo para quando a tabela precisar rolar horizontalmente */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #7324e1;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #5d1db4;
 }
