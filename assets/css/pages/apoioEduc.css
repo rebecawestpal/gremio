@@ -216,68 +216,7 @@ select {
     display: none;
 }
 
- /* Header Responsivo */
-@media (max-width: 1024px) {
-    .menuItens {
-        font-size: 15px;
-        margin-right: 8px;
-    }
-}
-
-@media (max-width: 880px) {
-    .menuItens {
-        font-size: 14px;
-        margin-right: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .headerCont {
-        padding: 0.5rem;
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .menuNav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 14px;
-        margin-right: 0;
-        padding: 0.25rem 0.5rem;
-    }
-    
-    .imgLogo {
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .headerCont {
-        padding: 0.5rem 0;
-    }
-    
-    .imgLogo {
-        height: 50px;
-        width: 100px;
-    }
-    
-    .menuNav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 1rem;
-    }
-}
-
-/* ===== RESPONSIVIDADE DA PÁGINA APOIO EDUCACIONAL ===== */
+/* RESPONSIVIDADE */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
         font-size: 1.8rem;
@@ -289,7 +228,7 @@ select {
     
     .botoesCurso button {
         font-size: 0.95rem;
-        padding: 0.45rem 1.1rem;
+        padding: 0.65rem 1.25rem;
     }
     
     .tabelasCurso th, 
@@ -299,26 +238,9 @@ select {
         padding: 0.6rem;
         font-size: 0.95rem;
     }
-    
-    /* Novo layout para recursos de aprendizado */
-    .resources-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 880px) {
-    .resources-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    
-    .resource-content h3 {
-        font-size: 1.1rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    /* CONTEÚDO PRINCIPAL */
     .mainContent {
         padding: 0.5rem;
     }
@@ -344,23 +266,7 @@ select {
         max-width: 300px;
     }
     
-    /* FORMULÁRIO E SELEÇÃO */
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    label {
-        margin-bottom: 0.5rem;
-    }
-    
-    select {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    /* BOTÕES DE MÓDULO */
+    /* Botões de módulo */
     .botoesCurso {
         flex-direction: column;
         align-items: center;
@@ -370,11 +276,9 @@ select {
         width: 100%;
         max-width: 250px;
         margin-bottom: 0.5rem;
-        font-size: 0.9rem;
-        padding: 0.5rem;
     }
     
-    /* TABELAS DE CONTEÚDO - TRANSFORMAÇÃO EM CARDS */
+    /* Transformar tabelas de conteúdo em cards em mobile */
     .tabelasCurso table {
         display: block;
         width: 100%;
@@ -427,41 +331,56 @@ select {
         width: 40%;
     }
     
-    /* NOVO LAYOUT PARA RECURSOS DE APRENDIZADO - SEM ROLAGEM LATERAL */
-    .resources-filter {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 1rem 0;
+    /* Tabela de professores em mobile */
+    .professores-table {
+        min-width: 100%;
     }
     
-    .resources-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        max-width: 100%;
-        overflow: hidden;
+    .professores-table thead {
+        display: none;
     }
     
-    .resource-card {
-        margin: 0 auto;
-        max-width: 100%;
+    .professores-table tbody, 
+    .professores-table tr {
+        display: block;
+        width: 100%;
     }
     
-    .resource-content {
-        padding: 1.2rem;
+    .professores-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0.75rem;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     
-    .resource-content h3 {
-        font-size: 1.2rem;
-        text-align: center;
+    .professores-table td {
+        display: block;
+        text-align: left;
+        padding: 0.75rem 0.5rem;
+        position: relative;
+        padding-left: 35%;
+        border: none;
+        border-bottom: 1px solid #eee;
     }
     
-    .resource-teacher, .resource-desc {
-        text-align: center;
+    .professores-table td:last-child {
+        border-bottom: none;
     }
     
-    .btn-container {
-        justify-content: center;
+    .professores-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.5rem;
+        font-weight: bold;
+        text-align: left;
+        background-color: #7324e1;
+        color: white;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        width: 30%;
     }
 }
 
@@ -501,40 +420,6 @@ select {
         font-size: 0.75rem;
         padding: 0.2rem 0.4rem;
     }
-    
-    /* AJUSTES FINOS PARA MOBILE */
-    .resources-filter {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .filter-btn {
-        width: 100%;
-        max-width: 200px;
-        margin-bottom: 0.5rem;
-    }
-    
-    .resource-icon {
-        padding: 1rem;
-        font-size: 2rem;
-    }
-    
-    .resource-content {
-        padding: 1rem;
-    }
-    
-    .resource-content h3 {
-        font-size: 1.1rem;
-    }
-    
-    .resource-teacher, .resource-desc {
-        font-size: 0.9rem;
-    }
-    
-    .resource-link {
-        font-size: 0.9rem;
-        padding: 0.6rem 0;
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -564,58 +449,8 @@ select {
         font-size: 0.7rem;
     }
     
-    /* ÚLTIMOS AJUSTES PARA TELAS MUITO PEQUENAS */
-    .resource-icon {
-        padding: 0.75rem;
-        font-size: 1.75rem;
-    }
-    
-    .resource-content {
-        padding: 0.8rem;
-    }
-    
-    .resource-content h3 {
-        font-size: 1rem;
-    }
-    
-    .resource-teacher, .resource-desc {
+    .professores-table a {
+        padding: 0.2rem 0.4rem;
         font-size: 0.85rem;
     }
-    
-    .resource-link {
-        font-size: 0.85rem;
-    }
-}
-
-/* ESTILOS ESPECÍFICOS PARA EVITAR ROLAGEM LATERAL */
-body {
-    overflow-x: hidden;
-}
-
-.mainContent {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.resources-section {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.resources-grid {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.resource-card {
-    box-sizing: border-box;
-    margin: 0 0 1rem 0;
-    width: 100%;
-}
-
-/* Garantir que nada ultrapasse a largura da tela */
-img, iframe, table, .resource-card, .mainSection {
-    max-width: 100%;
 }
