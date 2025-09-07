@@ -154,10 +154,11 @@
         <script>
     // Adicionar data-labels para a tabela em mobile
     document.addEventListener('DOMContentLoaded', function() {
-        const tableCells = document.querySelectorAll('.amistososContainer table td');
-        const headers = document.querySelectorAll('.amistososContainer table th');
+        const table = document.querySelector('.amistososContainer table');
+        const headers = table.querySelectorAll('th');
+        const cells = table.querySelectorAll('td');
         
-        tableCells.forEach((cell, index) => {
+        cells.forEach((cell, index) => {
             const headerIndex = index % headers.length;
             cell.setAttribute('data-label', headers[headerIndex].textContent);
         });
@@ -171,6 +172,11 @@
                 }, 200);
             });
         });
+        
+        // Garantir que o iframe seja responsivo
+        const iframe = document.querySelector('iframe');
+        iframe.style.width = '100%';
+        iframe.style.maxWidth = '100%';
     });
 </script>
     </body>
