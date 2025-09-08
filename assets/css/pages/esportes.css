@@ -14,9 +14,11 @@ main .mainContent {
     font-size: 2rem;
     color: #2c3e50;
 }
-h4{
+
+h4 {
     color: #2c3e50;
 }
+
 .mainSection {
     margin: 1rem 0;
     padding: 1.5rem;
@@ -30,52 +32,50 @@ h4{
 }
 
 .amistososContainer, .campeoesContainer {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .amistososContainer table {
-  width: 80%;
-  border-collapse: collapse;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .amistososContainer th, td {
-  padding: 1rem;
-  text-align: left;
-  border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
 .amistososContainer th {
-  background-color: #7324e1;
-  color: white;
+    background-color: #7324e1;
+    color: white;
 }
 
 .amistososContainer tr:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
-.amistososContainer p{
-   font-size: 23px;
+
+.amistososContainer p {
+    font-size: 23px;
     color: #2c3e50;
 }
+
 .infoAluno {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  padding: 1rem;
-  max-width: 1500px;
-  display: flex;
-  align-items: center;
-  height: 200px;
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 1500px;
+    height: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .amistososContainer button {
     width: 100%;
     padding: 10px;
@@ -92,227 +92,49 @@ h4{
 }
 
 .amistososContainer h4 {
-  font-size: 25px;
-  font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
 }
+
 .amistososContainer img {
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 1rem;
-}
-/* Estilos adicionais para as células, para melhor contraste */
-#amistosos-tabela td {
-  color: #333;
-}
-
-.btn-inter {
-  font-size: 18px;
-  margin: 10px;
-  padding: 12px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#modalidade {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-}
-
-/* Estilos para a área de amistosos */
-#amistosos {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-#amistosos h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-#amistosos ul {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-#amistosos ul li {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-#amistosos form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#amistosos label {
-  font-size: 16px;
-}
-
-#amistosos select,
-#amistosos input {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#amistosos button {
-  font-size: 18px;
-  padding: 12px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#amistosos button:hover {
-  background-color: #0056b3;
-}
-
-/* Estilos para a área de interclasses */
-#interclasses {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#interclasses h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-#interclasses table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-#interclasses th,
-#interclasses td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-}
-
-#interclasses th {
-  background-color: #f4f4f4;
-}
-
-#interclasses tr:hover {
-  background-color: #f9f9f9;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
 }
 
 /* Estilo clubes */
 .club-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4f6fa;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  color: #062442;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f6fa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #062442;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
 .club-card:hover {
-  background-color: #7324e188;
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-/* Header Responsivo */
-@media (max-width: 1024px) {
-    .menuItens {
-        font-size: 15px;
-        margin-right: 8px;
-    }
+    background-color: #7324e188;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 880px) {
-    .menuItens {
-        font-size: 14px;
-        margin-right: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .headerCont {
-        padding: 0.5rem;
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .menuNav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 14px;
-        margin-right: 0;
-        padding: 0.25rem 0.5rem;
-    }
-    
-    .imgLogo {
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .headerCont {
-        padding: 0.5rem 0;
-    }
-    
-    .imgLogo {
-        height: 50px;
-        width: 100px;
-    }
-    
-    .menuNav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 1rem;
-    }
-}
-
-/* Conteúdo Principal Responsivo */
+/* Conteúdo Responsivo */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
         font-size: 1.8rem;
     }
-    
     .amistososContainer p {
         font-size: 1.1rem;
     }
-    
     .amistososContainer h4 {
         font-size: 1.3rem;
     }
@@ -322,56 +144,45 @@ h4{
     .mainContent {
         padding: 0.5rem;
     }
-    
     .mainSection {
         padding: 1.2rem;
         margin: 1rem 0;
         flex-direction: column;
     }
-    
     .mainContent h2 {
         font-size: 1.6rem;
     }
-    
     .amistososContainer table {
         width: 100%;
         display: block;
         overflow-x: auto;
     }
-    
-    .amistososContainer th, 
+    .amistososContainer th,
     .amistososContainer td {
         padding: 0.8rem;
         font-size: 0.9rem;
     }
-    
     .amistososContainer p {
         font-size: 1rem;
     }
-    
     .amistososContainer h4 {
         font-size: 1.2rem;
     }
-    
     .infoAluno {
         flex-direction: column;
         height: auto;
         text-align: center;
         padding: 1rem;
     }
-    
     .amistososContainer img {
         margin-right: 0;
         margin-bottom: 1rem;
         max-width: 150px;
     }
-    
     .amistososContainer button {
         font-size: 1rem;
         padding: 0.8rem;
     }
-    
-    /* Ajuste para os cards de clubes */
     .club-card {
         padding: 1rem;
         font-size: 1rem;
@@ -383,70 +194,57 @@ h4{
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-    
     .mainSection {
         padding: 1rem;
         gap: 1rem;
     }
-    
-    .amistososContainer th, 
+    .amistososContainer th,
     .amistososContainer td {
         padding: 0.6rem;
         font-size: 0.8rem;
     }
-    
     .amistososContainer p {
         font-size: 0.95rem;
     }
-    
     .amistososContainer h4 {
         font-size: 1.1rem;
     }
-    
     .infoAluno {
         padding: 0.8rem;
     }
-    
     .amistososContainer img {
         max-width: 120px;
     }
-    
     .amistososContainer button {
         font-size: 0.9rem;
         padding: 0.7rem;
     }
-    
-    /* Ajuste para grid de clubes */
     .club-card {
         padding: 0.8rem;
         font-size: 0.9rem;
     }
 }
 
-/* Tabela responsiva para mobile */
+/* Tabela responsiva mobile */
 @media screen and (max-width: 640px) {
     .amistososContainer table {
         display: block;
         width: 100%;
     }
-    
     .amistososContainer table thead {
         display: none;
     }
-    
-    .amistososContainer table tbody, 
-    .amistososContainer table tr, 
+    .amistososContainer table tbody,
+    .amistososContainer table tr,
     .amistososContainer table td {
         display: block;
         width: 100%;
     }
-    
     .amistososContainer table tr {
         margin-bottom: 1rem;
         border: 1px solid #ddd;
         border-radius: 5px;
     }
-    
     .amistososContainer table td {
         text-align: right;
         padding: 0.5rem;
@@ -454,16 +252,38 @@ h4{
         border: none;
         border-bottom: 1px solid #ddd;
     }
-    
     .amistososContainer table td:last-child {
         border-bottom: none;
     }
-    
     .amistososContainer table td::before {
         content: attr(data-label);
         position: absolute;
         left: 0.5rem;
         font-weight: bold;
         text-align: left;
+    }
+}
+
+/* ================================
+   BLOCO EXTRA - MENU RETRÁTIL MOBILE
+   ================================ */
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        height: 50px;
+        width: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .navbar-nav .nav-item {
+        margin: 0.3rem 0;
+    }
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }

@@ -1,191 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Portal Grêmio Escolar</title>
-        <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+    <title>Portal Grêmio Escolar</title>
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
 
-        <link rel="stylesheet" href="assets/css/components/Globals.css">
-        <link rel="stylesheet" href="assets/css/components/Header.css">
-        <link rel="stylesheet" href="assets/css/components/Footer.css">
-        <link rel="stylesheet" href="assets/css/pages/quemSomos.css">
-    </head>
+    <link rel="stylesheet" href="assets/css/components/Globals.css">
+    <link rel="stylesheet" href="assets/css/components/Header.css">
+    <link rel="stylesheet" href="assets/css/components/Footer.css">
+    <link rel="stylesheet" href="assets/css/pages/quemSomos.css">
+  </head>
 
-    <body>
-        <header>
-            <div class="headerCont">
-                <a href="index.html">
-                    <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio" width="96">
-                </a>
-                <nav class="menuNav">
-                    <a href="index.html" class="menuItens">Quem Somos</a>
-                    <a href="calendario.html" class="menuItens">Calendário</a>
-                    <a href="esportes.html" class="menuItens">Esportes e Clubes</a>
-                    <a href="biblioteca.html" class="menuItens">Biblioteca</a>
-                    <a href="apoioEduc.html" class="menuItens">Apoio Escolar</a>
-                    <a href="acoes.html" class="menuItens">Ações</a>
-                </nav>
+  <body>
+    <!-- HEADER COM MENU RETRÁTIL -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7324e1;">
+        <a class="navbar-brand" href="index.html">
+          <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio">
+        </a>
+        <!-- Botão hambúrguer -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="menuMobile">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="quemSomos.html" class="nav-link active">Quem Somos</a></li>
+            <li class="nav-item"><a href="calendario.html" class="nav-link">Calendário</a></li>
+            <li class="nav-item"><a href="esportes.html" class="nav-link">Esportes e Clubes</a></li>
+            <li class="nav-item"><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+            <li class="nav-item"><a href="apoioEduc.html" class="nav-link">Apoio Escolar</a></li>
+            <li class="nav-item"><a href="acoes.html" class="nav-link">Ações</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="mainContent">
+        <div class="mainSection">
+          <h2>Missão e Visão</h2>
+          <p>Buscamos promover o desenvolvimento integral dos alunos da Etec Philadelpho Gouvêa Netto, fomentando a inovação, a criatividade e o espírito colaborativo, representando os interesses dos estudantes, organizando atividades que enriqueçam a experiência escolar e contribuiam para a formação de cidadãos conscientes, críticos e preparados para os desafios do futuro, enquanto crescemos e expandimos os horizontes da Inova</p>
+        </div>
+
+        <div class="mainSection">
+          <h2>Valores</h2>
+          <ul>
+            <li><strong>Inovação:</strong> Incentivar novas ideias e soluções criativas para os desafios da comunidade escolar.</li>
+            <li><strong>Respeito:</strong> Valorizar a diversidade de opiniões, culturas e pensamentos, promovendo um ambiente inclusivo.</li>
+            <li><strong>Colaboração:</strong> Trabalhar em equipe, fortalecendo a união entre alunos, professores e funcionários.</li>
+            <li><strong>Ética:</strong> Agir com transparência, integridade e responsabilidade em todas as ações.</li>
+            <li><strong>Protagonismo Estudantil:</strong> Empoderar os alunos para que sejam agentes ativos de transformação na escola e na sociedade.</li>
+          </ul>
+        </div>
+
+        <!-- Galeria com câmera -->
+        <section class="mainSection bg-light py-5">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center">
+                <img src="assets/img/quemSomos/camera.png" alt="Câmera" class="camera-trigger img-fluid" data-toggle="modal" data-target="#cameraModal">
+              </div>
+              <div class="col-md-8 mt-4 mt-md-0">
+                <h2>Galeria de Fotos</h2>
+                <p>
+                  Clique na câmera para abrir o nosso álbum e conhecer os alunos, 
+                  projetos e eventos do Grêmio Escolar, com as memórias que fazem parte da nossa história.
+                </p>
+              </div>
             </div>
-        </header>
+          </div>
+        </section>
 
-        <main>
-            <div class="mainContent">
-          <div class="mainSection">
-            <h2>Missão e Visão</h2>
-            <p>Buscamos promover o desenvolvimento integral dos alunos da Etec Philadelpho Gouvêa Netto, fomentando a inovação, a criatividade e o espírito colaborativo, representando os interesses dos estudantes, organizando atividades que enriqueçam a experiência escolar e contribuiam para a formação de cidadãos conscientes, críticos e preparados para os desafios do futuro, enquanto crescemos e expandimos os horizontes da Inova</p>
+        <!-- Modal -->
+        <div class="modal fade camera-modal" id="cameraModal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="camera-flash"></div>
+              <div class="camera-lens" data-dismiss="modal" title="Fechar"></div>
+              <div class="modal-body">
+                <div id="carouselAlunos" class="carousel slide camera-carousel" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="assets/img/quemSomos/memorie1.jpg" class="d-block w-100" alt="Aluno 1"></div>
+                    <div class="carousel-item"><img src="assets/img/quemSomos/memorie2.png" class="d-block w-100" alt="Aluno 2"></div>
+                    <div class="carousel-item"><img src="assets/img/quemSomos/memorie3.jpg" class="d-block w-100" alt="Aluno 3"></div>
+                    <div class="carousel-item"><img src="assets/img/quemSomos/memorie4.png" class="d-block w-100" alt="Aluno 4"></div>
+                    <div class="carousel-item"><img src="assets/img/quemSomos/memorie5.png" class="d-block w-100" alt="Aluno 5"></div>
+                    <div class="carousel-item"><img src="assets/img/quemSomos/memorie6.png" class="d-block w-100" alt="Aluno 6"></div>
+                    <div class="carousel-item"><img src="assets/img/quemSomos/memorie7.jpg" class="d-block w-100" alt="Aluno 7"></div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselAlunos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselAlunos" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="mainSection">
-            <h2>Valores</h2>
-            <ul>
-              <li><strong>Inovação:</strong> Incentivar novas ideias e soluções criativas para os desafios da comunidade escolar.</li>
-              <li><strong>Respeito:</strong> Valorizar a diversidade de opiniões, culturas e pensamentos, promovendo um ambiente inclusivo.</li>
-              <li><strong>Colaboração:</strong> Trabalhar em equipe, fortalecendo a união entre alunos, professores e funcionários.</li>
-              <li><strong>Ética:</strong> Agir com transparência, integridade e responsabilidade em todas as ações.</li>
-              <li><strong>Protagonismo Estudantil:</strong> Empoderar os alunos para que sejam agentes ativos de transformação na escola e na sociedade.</li>
-            </ul>
-          </div>
-       <!-- Galeria com câmera e texto lado a lado -->
-    <section class="mainSection bg-light py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Coluna da câmera -->
-          <div class="col-md-4 text-center">
-            <img src="assets/img/quemSomos/camera.png" 
-                 alt="Câmera" 
-                 class="camera-trigger img-fluid" 
-                 data-toggle="modal" 
-                 data-target="#cameraModal">
-          </div>
-
-          <!-- Coluna do texto -->
-          <div class="col-md-8 mt-4 mt-md-0">
-            <h2>Galeria de Fotos</h2>
-            <p>
-              Clique na câmera para abrir o nosso álbum e conhecer os alunos, 
-              projetos e eventos do Grêmio Escolar, com as memórias que fazem parte da nossa história.
-            </p>
           </div>
         </div>
-      </div>
-    </section>
 
-   <div class="modal fade camera-modal" id="cameraModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-
-      <!-- Flash e lente -->
-      <div class="camera-flash"></div>
-      <div class="camera-lens" data-dismiss="modal" title="Fechar"></div>
-
-      <div class="modal-body">
-        <!-- Carousel de fotos -->
-        <div id="carouselAlunos" class="carousel slide camera-carousel" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/img/quemSomos/memorie1.jpg" class="d-block w-100" alt="Aluno 1">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/quemSomos/memorie2.png" class="d-block w-100" alt="Aluno 2">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/quemSomos/memorie3.jpg" class="d-block w-100" alt="Aluno 3">
-            </div>
-             <div class="carousel-item">
-              <img src="assets/img/quemSomos/memorie4.png" class="d-block w-100" alt="Aluno 4">
-            </div>
-             <div class="carousel-item">
-              <img src="assets/img/quemSomos/memorie5.png" class="d-block w-100" alt="Aluno 5">
-            </div>
-             <div class="carousel-item">
-              <img src="assets/img/quemSomos/memorie6.png" class="d-block w-100" alt="Aluno 6">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/quemSomos/memorie7.jpg" class="d-block w-100" alt="Aluno 6">
-            </div>
-          </div>
-
-          <!-- Controles -->
-          <a class="carousel-control-prev" href="#carouselAlunos" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselAlunos" role="button" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="sr-only">Próximo</span>
-          </a>
+        <!-- Contatos -->
+        <div class="mainSection">
+          <h2>Com quem falar?</h2>
+          <section class="membros">
+            <article class="membro">
+              <img src="assets/img/analuz.jpeg" alt="Ana Luz" class="rounded-circle">
+              <h3>Ana Luz: Presidente do Grêmio</h3>
+              <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517991534471?text=Olá,%20Ana%20Luz.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/davi.jpeg" alt="Davi" class="rounded-circle">
+              <h3>Davi: Diretor de Esportes</h3>
+              <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517991065879?text=Olá,%20Davi.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/duda.jpeg" alt="Duda" class="rounded-circle">
+              <h3>Duda: Diretora Cultural</h3>
+              <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517981401771?text=Olá,%20Duda.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/gabi.jpg" alt="Gabi" class="rounded-circle">
+              <h3>Gabriela: Vice-Diretora Cultural</h3>
+              <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517992538606?text=Olá,%20Gabi.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/anonimo.png" alt="Vitoria" class="rounded-circle">
+              <h3>Procura-se: Vice-Diretora Social</h3>
+              <button class="openModalBtn">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/anonimo.png" alt="Vice Comunicação" class="rounded-circle">
+              <h3>Procura-se: Vice-Diretora de Comunicação</h3>
+              <button class="openModalBtn">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/feguera.jpeg" alt="Pedro" class="rounded-circle">
+              <h3>Pedro Feguera: Tesoureiro</h3>
+              <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517991491010?text=Olá,%20Pedro.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/anonimo.png" alt="Gabriel" class="rounded-circle">
+              <h3>Procura-se: Vice-Tesoureiro</h3>
+              <button class="openModalBtn">Enviar Mensagem</button>
+            </article>
+            <article class="membro">
+              <img src="assets/img/luis.jpg" alt="Luis" class="rounded-circle">
+              <h3>Luis Rafael: Acessor Geral</h3>
+              <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517997159867?text=Olá,%20Luis.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+            </article>
+          </section>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-                <div class="mainSection">
-                    <h2>Com quem falar?</h2>
-                    <section class="membros">
-                         <article class="membro">
-                            <img src="assets/img/analuz.jpeg" alt="Ana Luz" class="rounded-circle">
-                            <h3>Ana Luz: Presidente do Grêmio</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517991534471?text=Olá,%20Ana%20Luz.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/davi.jpeg" alt="Davi" class="rounded-circle">
-                            <h3>Davi: Diretor de Esportes</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517991065879?text=Olá,%20Davi.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/duda.jpeg" alt="Duda" class="rounded-circle">
-                            <h3>Duda: Diretora Cultural</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517981401771?text=Olá,%20Duda.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/gabi.jpg" alt="Gabi" class="rounded-circle">
-                            <h3>Gabriela: Vice-Diretora Cultural</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517992538606?text=Olá,%20Gabi.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/anonimo.png" alt="Vitoria" class="rounded-circle">
-                            <h3>Procura-se: Vice-Diretora Social</h3>
-                            <button class="openModalBtn" onclick="">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/anonimo.png" alt="vice comunicacao" class="rounded-circle">
-                            <h3>Procura-se: Vice-Diretora de Comunicação</h3>
-                            <button class="openModalBtn" onclick="">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/feguera.jpeg" alt="Pedro" class="rounded-circle">
-                            <h3>Pedro Feguera: Tesoureiro</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517991491010?text=Olá,%20Pedro.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/anonimo.png" alt="Gabriel" class="rounded-circle">
-                            <h3>Procura-se: Vice-Tesoureiro</h3>
-                            <button class="openModalBtn" onclick="">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/luis.jpg" alt="Luis" class="rounded-circle">
-                            <h3>Luis Rafael: Acessor Geral</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517997159867?text=Olá,%20Luis.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-      </main>
+    </main>
 
-        <footer>
-            <div class="footerContent">
-                 <p>&copy; 2025 Portal Etec.</p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerContent">
+        <p>&copy; 2025 Portal Etec.</p>
+      </div>
+    </footer>
 
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
 </html>

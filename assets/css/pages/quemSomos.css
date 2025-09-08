@@ -48,49 +48,49 @@ main .mainContent {
 }
 
 
- /* Foto de câmera que abre o modal */
-    .camera-trigger {
-      width: 200px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-    .camera-trigger:hover {
-      transform: scale(1.05);
-    }
+/* Foto de câmera que abre o modal */
+.camera-trigger {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.camera-trigger:hover {
+  transform: scale(1.05);
+}
 
-    /* Moldura da câmera (modal) */
-    .camera-modal .modal-content {
-      border-radius: 30px;
-      background: #222;
-      position: relative;
-      padding: 2px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    }
+/* Moldura da câmera (modal) */
+.camera-modal .modal-content {
+  border-radius: 30px;
+  background: #222;
+  position: relative;
+  padding: 2px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
 
-    /* Lente no modal */
-    .camera-lens {
-      border: 5px solid #444;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      background: radial-gradient(circle, #666, #111);
-      position: absolute;
-      top: 10px;
-      right: 15px;
-    }
-
-    /* Ajustando imagens do carousel */
-    .camera-carousel img {
-      height: 380px;
-      object-fit: cover;
-      border-radius: 20px;
-    }
-    /* Lente clicável */
-  .camera-lens {
+/* Lente no modal */
+.camera-lens {
+  border: 5px solid #444;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #666, #111);
   position: absolute;
-  top: 20px; /* ajuste conforme o design da câmera */
+  top: 10px;
+  right: 15px;
+}
+
+/* Ajustando imagens do carousel */
+.camera-carousel img {
+  height: 380px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/* Lente clicável */
+.camera-lens {
+  position: absolute;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 30px;
@@ -159,68 +159,9 @@ main .mainContent {
     background-color: #8c2ae1;
 }
 
-/* Header Responsivo */
-@media (max-width: 1024px) {
-    .menuItens {
-        font-size: 15px;
-        margin-right: 8px;
-    }
-}
-
-@media (max-width: 880px) {
-    .menuItens {
-        font-size: 14px;
-        margin-right: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .headerCont {
-        padding: 0.5rem;
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .menuNav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 14px;
-        margin-right: 0;
-        padding: 0.25rem 0.5rem;
-    }
-    
-    .imgLogo {
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .headerCont {
-        padding: 0.5rem 0;
-    }
-    
-    .imgLogo {
-        height: 50px;
-        width: 100px;
-    }
-    
-    .menuNav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 1rem;
-    }
-}
-
-/* Conteúdo Principal Responsivo */
+/* ===========================
+   RESPONSIVIDADE DO CONTEÚDO
+   =========================== */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
         font-size: 2rem;
@@ -468,4 +409,32 @@ main .mainContent {
         width: 20px;
         height: 20px;
     }
+}
+
+/* ================================
+   BLOCO EXTRA - MENU RETRÁTIL MOBILE
+   ================================ */
+@media screen and (max-width: 768px) {
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.3rem 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
 }

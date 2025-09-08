@@ -27,7 +27,8 @@ main .mainContent {
     gap: 1.5rem;
 }
 
-.mainContent .mainDescription {
+.mainContent .mainDescription,
+.mainSection p {
     font-size: 1.25rem;
     line-height: 1.5;
     color: #062442;
@@ -45,282 +46,121 @@ main .mainContent {
     font-size: 1.25rem;
     color: #062442;
 }
-.mainSection p {
-    font-size: 1.25rem;
-    color: #062442;
-}
-/* Estilos para a área de interclasses */
-#interclasses {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.amistososContainer tr:hover {
-  background-color: #ddd;
-}main .mainContent {
-    padding: 0.5rem 1rem;
-    max-width: 1280px;
-    margin: auto;
-}
 
-.mainContent h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #2c3e50;
-}
-h4{
-    color: #2c3e50;
-}
-.amistososContainer, .campeoesContainer {
-  flex-direction: column;
+/* ============================= */
+/*  TABELA - Horário de Funcionamento */
+/* ============================= */
+
+.table-container {
+    width: 100%;
+    margin: 1.5rem 0;
+    overflow-x: auto;
 }
 
 .amistososContainer table {
-  width: 80%;
-  border-collapse: collapse;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.amistososContainer th, td {
-  padding: 1rem;
-  text-align: left;
-  border: 1px solid #ddd;
+.amistososContainer th, 
+.amistososContainer td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
 .amistososContainer th {
-  background-color: #7324e1;
-  color: white;
+    background-color: #7324e1;
+    color: white;
 }
 
 .amistososContainer tr:hover {
-  background-color: #ddd;
+    background-color: #f5f5f5;
 }
-.amistososContainer p{
-   font-size: 23px;
-    color: #2c3e50;
+
+/* ============================= */
+/*  Recomendações */
+/* ============================= */
+
+.recommendation-list {
+    list-style-type: none;
+    padding-left: 0;
 }
-.infoAluno {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  padding: 1rem;
-  max-width: 1500px;
-  display: flex;
-  align-items: center;
-  height: 200px;
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+.recommendation-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border-left: 5px solid #7324e1;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.amistososContainer button {
-    width: 100%;
-    padding: 10px;
+
+.recommendation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #495057;
+    font-weight: 500;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.btn-custom {
     background-color: #7324e1;
-    color: white;
     border: none;
-    font-size: 20px;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(115, 36, 225, 0.2);
 }
 
-.amistososContainer button:hover {
-    background-color: #8753d1;
+.btn-custom:hover {
+    background-color: #5d1db4;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(115, 36, 225, 0.3);
 }
 
-.amistososContainer h4 {
-  font-size: 25px;
-  font-weight: bold;
-}
-.amistososContainer img {
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 1rem;
-}
-/* Estilos adicionais para as células, para melhor contraste */
-#amistosos-tabela td {
-  color: #333;
+.btn-custom i {
+    margin-left: 8px;
+    font-size: 14px;
 }
 
-.btn-inter {
-  font-size: 18px;
-  margin: 10px;
-  padding: 12px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#modalidade {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-}
-
-/* Estilos para a área de amistosos */
-#amistosos {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-#amistosos form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#amistosos label {
-  font-size: 16px;
-}
-
-#amistosos select,
-#amistosos input {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#amistosos button {
-  font-size: 18px;
-  padding: 12px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#amistosos button:hover {
-  background-color: #0056b3;
-}
-
-/* Estilos para a área de interclasses */
-#interclasses {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#interclasses h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-#interclasses table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-#interclasses th,
-#interclasses td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-}
-
-#interclasses th {
-  background-color: #f4f4f4;
-}
-
-#interclasses tr:hover {
-  background-color: #f9f9f9;
-}
-
-
-        .recommendation-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        
-        .recommendation-item {
-            margin-bottom: 25px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 12px;
-            border-left: 5px solid #7324e1;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .recommendation-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .item-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .item-text {
-            flex: 1;
-            min-width: 300px;
-            margin-right: 20px;
-            font-size: 18px;
-            color: #495057;
-            font-weight: 500;
-        }
-        
-        .btn-container {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 15px;
-        }
-        
-        .btn-custom {
-            background-color: #7324e1;
-            border: none;
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(115, 36, 225, 0.2);
-        }
-        
-        .btn-custom:hover {
-            background-color: #5d1db4;
-            color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(115, 36, 225, 0.3);
-        }
-        
-        .btn-custom i {
-            margin-left: 8px;
-            font-size: 14px;
-        }
-
-        /* Header Responsivo */
+/* ============================= */
+/*  Header Responsivo (Menu Retrátil) */
+/* ============================= */
 @media (max-width: 1024px) {
     .menuItens {
         font-size: 15px;
@@ -381,39 +221,10 @@ h4{
     }
 }
 
-/* Container para tabela responsiva */
-.table-container {
-    width: 100%;
-    margin: 1.5rem 0;
-}
+/* ============================= */
+/*  Responsividade do Conteúdo */
+/* ============================= */
 
-/* Estilos da tabela */
-.amistososContainer table {
-    width: 100%;
-    min-width: 500px; /* Largura mínima para manter a legibilidade */
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.amistososContainer th, 
-.amistososContainer td {
-    padding: 1rem;
-    text-align: right;
-    border: 1px solid #ddd;
-}
-
-.amistososContainer th {
-    background-color: #7324e1;
-    color: white;
-    position: sticky;
-    right: 0;
-}
-
-.amistososContainer tr:hover {
-    background-color: #f5f5f5;
-}
-/* Media Queries para responsividade */
 @media screen and (max-width: 1024px) {
     .mainContent h2 {
         font-size: 2rem;
@@ -433,7 +244,7 @@ h4{
 }
 
 @media screen and (max-width: 768px) {
-    main .mainContent {
+    .mainContent {
         padding: 0.5rem;
     }
     
@@ -477,36 +288,32 @@ h4{
     .amistososContainer th, 
     .amistososContainer td {
         padding: 0.8rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
-    .amistososContainer table {
-        min-width: 400px;
-    }
-    
-    /* Transformar tabela em cards em mobile */
+    /* Tabela em cards no mobile */
     .amistososContainer table {
         display: block;
     }
     
-    .amistososContainer table thead {
+    .amistososContainer thead {
         display: none;
     }
     
-    .amistososContainer table tbody, 
-    .amistososContainer table tr {
+    .amistososContainer tbody, 
+    .amistososContainer tr {
         display: block;
         width: 100%;
     }
     
-    .amistososContainer table tr {
+    .amistososContainer tr {
         margin-bottom: 1rem;
         border: 1px solid #ddd;
         border-radius: 8px;
         overflow: hidden;
     }
     
-    .amistososContainer table td {
+    .amistososContainer td {
         display: block;
         text-align: right;
         padding: 0.8rem;
@@ -515,16 +322,15 @@ h4{
         border-bottom: 1px solid #ddd;
     }
     
-    .amistososContainer table td:last-child {
+    .amistososContainer td:last-child {
         border-bottom: none;
     }
     
-    .amistososContainer table td::before {
+    .amistososContainer td::before {
         content: attr(data-label);
         position: absolute;
-        right: 0.8rem;
+        left: 0.8rem;
         font-weight: bold;
-        text-align: left;
         color: #7324e1;
     }
 }
@@ -559,17 +365,11 @@ h4{
         min-width: 320px;
     }
     
-    .amistososContainer table td::before {
-        right: 0.6rem;
+    .amistososContainer td::before {
         font-size: 0.9rem;
-    }
-    
-    .amistososContainer td:nth-child(2) {
-        word-break: break-word;
     }
 }
 
-/* Melhorias para telas muito pequenas */
 @media screen and (max-width: 360px) {
     .amistososContainer table {
         min-width: 280px;
@@ -581,8 +381,7 @@ h4{
         font-size: 0.75rem;
     }
     
-    .amistososContainer table td::before {
-        right: 0.5rem;
+    .amistososContainer td::before {
         font-size: 0.8rem;
     }
 }

@@ -1,139 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Portal Grêmio Escolar</title>
-        <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+    <title>Portal Grêmio Escolar</title>
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
 
-        <link rel="stylesheet" href="assets/css/components/Globals.css">
-        <link rel="stylesheet" href="assets/css/components/Header.css">
-        <link rel="stylesheet" href="assets/css/components/Footer.css">
-        <link rel="stylesheet" href="assets/css/pages/biblioteca.css">
-    </head>
+    <link rel="stylesheet" href="assets/css/components/Globals.css">
+    <link rel="stylesheet" href="assets/css/components/Header.css">
+    <link rel="stylesheet" href="assets/css/components/Footer.css">
+    <link rel="stylesheet" href="assets/css/pages/biblioteca.css">
+</head>
 
-    <body>
-        <header>
-            <div class="headerCont">
-                <a href="index.html">
-                    <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio" width="96">
-                </a>
-                <nav class="menuNav">
-                    <a href="quemSomos.html" class="menuItens">Quem Somos</a>
-                    <a href="calendario.html" class="menuItens">Calendário</a>
-                    <a href="esportes.html" class="menuItens">Esportes e Clubes</a>
-                    <a href="index.html" class="menuItens">Biblioteca</a>
-                    <a href="apoioEduc.html" class="menuItens">Apoio Escolar</a>
-                    <a href="acoes.html" class="menuItens">Ações</a>
-                </nav>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7324e1;">
+        <a class="navbar-brand" href="index.html">
+            <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio" width="96">
+        </a>
+        <!-- Botão hamburguer -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuMobile"
+                aria-controls="menuMobile" aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="menuMobile">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="calendario.html" class="nav-link">Calendário</a></li>
+                <li class="nav-item"><a href="esportes.html" class="nav-link">Esportes e Clubes</a></li>
+                <li class="nav-item active"><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+                <li class="nav-item"><a href="apoioEduc.html" class="nav-link">Apoio Escolar</a></li>
+                <li class="nav-item"><a href="acoes.html" class="nav-link">Ações</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="mainContent">
+        <div class="mainSection amistososContainer">
+            <h2>Biblioteca Carlos de Arnaldo Silva</h2>
+            <p class="mainDescription">
+                Recebeu o nome do Dr. Carlos de Arnaldo Silva no dia primeiro de outubro de 1982, em homenagem ao
+                ilustre homem público e amigo da escola.
+                Nascido em 23/11/1932, Olímpia, SP, Bacharel em Ciências Jurídicas e Sociais pela Faculdade de
+                Direito na Universidade de São Paulo – USP no ano de 1956.
+                Foi Promotor de Justiça de São José do Rio Preto e de outras comarcas do Estado de São Paulo,
+                atuando como Professor do Antigo Ginásio Industrial Estadual “Philadelpho Gouvêa Netto” nos anos
+                de 1970 e 1971, na disciplina de Organização Social e Política Brasileira.
+            </p>
+
+            <h2>Horário de Funcionamento</h2>
+            <div class="table-container">
+                <table class="amistososContainer">
+                    <thead>
+                    <tr>
+                        <th>Dia da semana</th>
+                        <th>Horário</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>Das 08:30 às 12:00 / 13:00 às 17:30</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>Das 12:30 às 17:00 / 18:00 às 21:30</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>Das 08:30 às 12:00 / 13:00 às 17:30</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta-feira</td>
+                        <td>Das 12:30 às 17:00 / 18:00 às 21:30</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>Das 08:30 às 12:00 / 13:00 às 17:30</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-        </header>
+        </div>
 
-        <main>
-            <div class="mainContent">
-                <div class="mainSection amistososContainer">
-                    <h2>Biblioteca Carlos de Arnaldo Silva</h2>
-                    <p class="mainDescription">Recebeu o nome do Dr. Carlos de Arnaldo Silva no dia primeiro de outubro de 1982, em homenagem ao
-                        ilustre homem público e amigo da escola.
-                        Nascido em 23/11/1932, Olímpia, SP, Bacharel em Ciências Jurídicas e Sociais pela Faculdade de
-                        Direito na Universidade de São Paulo – USP no ano de 1956.
-                        Foi Promotor de Justiça de São José do Rio Preto e de outras comarcas do Estado de São Paulo,
-                        atuando como Professor
-                        do Antigo Ginásio Industrial Estadual “Philadelpho Gouvêa Netto” nos anos de 1970 e 1971, na
-                        disciplina de Organização Social e Política Brasileira.</p>
-                    <h2>Horário de Funcionamento</h2>
-                    <div class="table-container">
-    <table class="amistososContainer">
-        <thead>
-            <tr>
-                <th>Dia da semana</th>
-                <th>Horário</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Segunda-feira</td>
-                <td>Das 08:30 às 12:00 / 13:00 às 17:30</td>
-            </tr>
-            <tr>
-                <td>Terça-feira</td>
-                <td>Das 12:30 às 17:00 / 18:00 às 21:30</td>
-            </tr>
-            <tr>
-                <td>Quarta-feira</td>
-                <td>Das 08:30 às 12:00 / 13:00 às 17:30</td>
-            </tr>
-            <tr>
-                <td>Quinta-feira</td>
-                <td>Das 12:30 às 17:00 / 18:00 às 21:30</td>
-            </tr>
-            <tr>
-                <td>Sexta-feira</td>
-                <td>Das 08:30 às 12:00 / 13:00 às 17:30</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-                <div class="mainSection">
-        <h2><i class="fas fa-book-open"></i> Recomendações</h2>
-        
-        <p>
-            Esperamos que através da leitura, o aprendizado se torne mais prazeroso e acessível. 
-            Por isso, também indicamos algumas plataformas digitais gratuitas para acesso.
-        </p>
-        
-        <ul class="recommendation-list">
-            <li class="recommendation-item">
-                <div class="item-content">
-                    <div class="item-text">Biblioteca Digital do Estado de São Paulo</div>
-                    <div class="btn-container">
-                        <button class="btn-custom" onclick="window.open('https://biblion.odilo.us/', '_blank')">
-                            Acessar Biblion <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-            </li>
-            
-            <li class="recommendation-item">
-                <div class="item-content">
-                    <div class="item-text">Biblioteca Nacional Digital</div>
-                    <div class="btn-container">
-                        <button class="btn-custom" onclick="window.open('https://bndigital.bn.gov.br/', '_blank')">
-                            Acessar BNDigital <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-            </li>
-            
-            <li class="recommendation-item">
-                <div class="item-content">
-                    <div class="item-text">Obras de Domínio Público disponíveis</div>
-                    <div class="btn-container">
-                        <button class="btn-custom" onclick="window.open('http://www.dominiopublico.gov.br/pesquisa/PesquisaObraForm.jsp', '_blank')">
-                            Acessar PortalDP <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        </main>
+        <div class="mainSection">
+            <h2><i class="fas fa-book-open"></i> Recomendações</h2>
+            <p>
+                Esperamos que através da leitura, o aprendizado se torne mais prazeroso e acessível.
+                Por isso, também indicamos algumas plataformas digitais gratuitas para acesso.
+            </p>
 
-        <footer>
-            <div class="footerContent">
-                 <p>&copy; 2025 Portal Etec.</p>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+            <ul class="recommendation-list">
+                <li class="recommendation-item">
+                    <div class="item-content">
+                        <div class="item-text">Biblioteca Digital do Estado de São Paulo</div>
+                        <div class="btn-container">
+                            <button class="btn-custom"
+                                    onclick="window.open('https://biblion.odilo.us/', '_blank')">
+                                Acessar Biblion <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="recommendation-item">
+                    <div class="item-content">
+                        <div class="item-text">Biblioteca Nacional Digital</div>
+                        <div class="btn-container">
+                            <button class="btn-custom"
+                                    onclick="window.open('https://bndigital.bn.gov.br/', '_blank')">
+                                Acessar BNDigital <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="recommendation-item">
+                    <div class="item-content">
+                        <div class="item-text">Obras de Domínio Público disponíveis</div>
+                        <div class="btn-container">
+                            <button class="btn-custom"
+                                    onclick="window.open('http://www.dominiopublico.gov.br/pesquisa/PesquisaObraForm.jsp', '_blank')">
+                                Acessar PortalDP <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footerContent">
+        <p>&copy; 2025 Portal Etec.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
 </html>

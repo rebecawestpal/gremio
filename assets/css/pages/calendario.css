@@ -14,6 +14,7 @@ main .mainContent {
     font-size: 2.25rem;
     color: #2c3e50;
 }
+
 .mainSection {
     margin: 1rem 0;
     padding: 1.5rem;
@@ -35,7 +36,7 @@ main .mainContent {
     text-decoration: underline;
 }
 
-.mainSection button{
+.mainSection button {
     font-size: 20px;
 }
 
@@ -48,6 +49,7 @@ main .mainContent {
     font-size: 20px;
     color: #34495e;
 }
+
 .calendarControls {
     display: flex;
     justify-content: center;
@@ -108,77 +110,17 @@ main .mainContent {
     color: white;
     font-weight: bold;
 }
+
 .btn-custom {
-  background-color: #7324e1;
-  border-color: #7324e1;
-  color: #fff;
+    background-color: #7324e1;
+    border-color: #7324e1;
+    color: #fff;
 }
 
 .btn-custom:hover {
-  background-color: #5d1db4; /* tom mais escuro no hover */
-  border-color: #5d1db4;
-  color: #fff;
-}
-
-/* Header Responsivo */
-@media (max-width: 1024px) {
-    .menuItens {
-        font-size: 15px;
-        margin-right: 8px;
-    }
-}
-
-@media (max-width: 880px) {
-    .menuItens {
-        font-size: 14px;
-        margin-right: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .headerCont {
-        padding: 0.5rem;
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .menuNav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 14px;
-        margin-right: 0;
-        padding: 0.25rem 0.5rem;
-    }
-    
-    .imgLogo {
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .headerCont {
-        padding: 0.5rem 0;
-    }
-    
-    .imgLogo {
-        height: 50px;
-        width: 100px;
-    }
-    
-    .menuNav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 1rem;
-    }
+    background-color: #5d1db4;
+    border-color: #5d1db4;
+    color: #fff;
 }
 
 /* Conteúdo Principal Responsivo */
@@ -186,11 +128,9 @@ main .mainContent {
     .mainContent h2 {
         font-size: 2rem;
     }
-    
     .eventosContainer ul li {
         font-size: 1.1rem;
     }
-    
     #monthYear {
         font-size: 1.3rem;
     }
@@ -200,46 +140,37 @@ main .mainContent {
     .mainContent {
         padding: 0.5rem;
     }
-    
     .mainSection {
         padding: 1.2rem;
         margin: 1rem 0;
     }
-    
     .mainContent h2 {
         font-size: 1.8rem;
     }
-    
     .eventosContainer ul li {
         font-size: 1rem;
     }
-    
     .calendarControls {
         flex-direction: column;
         gap: 0.75rem;
     }
-    
     #monthYear {
         order: -1;
         width: 100%;
     }
-    
     .calendarGrid {
         gap: 0.25rem;
         padding: 0.75rem;
     }
-    
     .calendarGrid div {
         min-height: 40px;
         padding: 0.4rem;
         font-size: 0.9rem;
     }
-    
     .calendarGrid .header {
         padding: 0.5rem;
         font-size: 0.9rem;
     }
-    
     .btn-custom {
         font-size: 1rem;
         padding: 0.6rem 1.2rem;
@@ -251,46 +182,62 @@ main .mainContent {
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
-    
     .mainSection {
         padding: 1rem;
         gap: 1rem;
     }
-    
     .eventosContainer ul li {
         font-size: 0.95rem;
         padding: 0.6rem 0.8rem;
     }
-    
     #monthYear {
         font-size: 1.2rem;
         min-width: auto;
     }
-    
     .calendarControls button {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
     }
-    
     .calendarGrid {
         padding: 0.5rem;
     }
-    
     .calendarGrid div {
         min-height: 35px;
         padding: 0.3rem;
         font-size: 0.8rem;
     }
-    
     .calendarGrid .header {
         padding: 0.4rem;
         font-size: 0.8rem;
     }
-    
     .btn-custom {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
         width: 100%;
         text-align: center;
+    }
+}
+
+/* ================================
+   BLOCO EXTRA - MENU RETRÁTIL MOBILE
+   ================================ */
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        height: 50px;
+        width: auto;
+    }
+    .navbar-nav {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .navbar-nav .nav-item {
+        margin: 0.3rem 0;
+    }
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }
