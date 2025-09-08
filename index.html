@@ -1,214 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Portal Grêmio Escolar</title>
-        <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+    <title>Portal Grêmio Escolar</title>
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
 
-        <link rel="stylesheet" href="assets/css/components/Globals.css">
-        <link rel="stylesheet" href="assets/css/components/Header.css">
-        <link rel="stylesheet" href="assets/css/components/Footer.css">
-        <link rel="stylesheet" href="assets/css/pages/index.css">
-    </head>
+    <link rel="stylesheet" href="assets/css/components/Globals.css">
+    <link rel="stylesheet" href="assets/css/components/Header.css">
+    <link rel="stylesheet" href="assets/css/components/Footer.css">
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+  </head>
 
-    <body>
-        <header>
-            <div class="headerCont">
-                <a href="index.html">
-                    <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio" width="96">
-                </a>
-                <nav class="menuNav">
-                    <a href="quemSomos.html" class="menuItens">Quem Somos</a>
-                    <a href="calendario.html" class="menuItens">Calendário</a>
-                    <a href="esportes.html" class="menuItens">Esportes e Clubes</a>
-                    <a href="biblioteca.html" class="menuItens">Biblioteca</a>
-                    <a href="apoioEduc.html" class="menuItens">Apoio Escolar</a>
-                    <a href="acoes.html" class="menuItens">Ações</a>
-                </nav>
+  <body>
+    <!-- HEADER COM MENU RETRÁTIL -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7324e1;">
+        <a class="navbar-brand" href="index.html">
+          <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio">
+        </a>
+        <!-- Botão hambúrguer -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="menuMobile">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
+            <li class="nav-item"><a href="calendario.html" class="nav-link">Calendário</a></li>
+            <li class="nav-item"><a href="esportes.html" class="nav-link">Esportes e Clubes</a></li>
+            <li class="nav-item"><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+            <li class="nav-item"><a href="apoioEduc.html" class="nav-link">Apoio Escolar</a></li>
+            <li class="nav-item"><a href="acoes.html" class="nav-link">Ações</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- CAROUSEL -->
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/noticias/banner2.png" class="d-block w-100" alt="inova" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdzu1M2w6Hag7VFKpK4UuRX_wJM-Ahg7yb00HHbbdlH2qCgEA/viewform?usp=dialog', '_blank')">
+            <div class="carousel-caption">
+              <h5>Lançamento do Portal Virtual</h5>
+              <p>Teste e mande um feedback para nós. Clique 
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzu1M2w6Hag7VFKpK4UuRX_wJM-Ahg7yb00HHbbdlH2qCgEA/viewform?usp=dialog">aqui!</a>
+              </p>
             </div>
-        </header>
-
-        <main>
-    <div id="carouselExample" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-      <img src="assets/img/noticias/banner2.png" class="d-block w-100" alt="inova" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdzu1M2w6Hag7VFKpK4UuRX_wJM-Ahg7yb00HHbbdlH2qCgEA/viewform?usp=dialog', '_blank')">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Lançamento do Portal Virtual</h5>
-        <p>Teste e mande um feedback para nós. Clique <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzu1M2w6Hag7VFKpK4UuRX_wJM-Ahg7yb00HHbbdlH2qCgEA/viewform?usp=dialog">aqui!</a></p></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/noticias/banner3.png" class="d-block w-100" alt="..." onclick="window.open('https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos', '_blank')">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Reta final dos vestibulandos</h5>
-        <p>Acesse as provas anteriores <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos">aqui</a></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/noticias/banner1.png" class="d-block w-100" alt="inova">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Impressora social</h5>
-        <p>Agora o grêmio imprime para vocês, saiba mais na página de <a href="eventos.html">Ações.</a></p>
-      </div>
-    </div>
-
-  <!-- Controles -->
-  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div>
-        </section>
-        <!-- Equipe do Grêmio -->
-            <section class="mainSection">
-                    <section class="membros">
-                      <article class="membro">
-                            <img src="assets/img/analivia.jpeg" alt="Ana Livia" class="rounded-circle">
-                            <h3>Ana Lívia: Diretora Social</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517988001141?text=Olá,%20Ana%20Lívia.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/rebeca.jpeg" alt="Rebeca" class="rounded-circle">
-                            <h3>Rebeca: Vice-Presidente do Grêmio</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517997445029?text=Olá,%20Rebeca.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-                        <article class="membro">
-                            <img src="assets/img/kaique.jpeg" alt="Kaique" class="rounded-circle">
-                            <h3>Kaique: Diretor de Comunicação</h3>
-                            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517996211509?text=Olá,%20Kaique.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
-                        </article>
-            </section>
-            <section class="mainSection">
-                    <h2> </h2>
-            </section>
-
-                <div class="section">
-            <h2>Construção do Portal Inova - Agradecimentos</h2>
-            <p>Agradecemos, primeiramente a Etec Philadelpho Gouvêa Netto, Centro Paula Souza e o Governo do Estado de São Paulo pela oportunidade de realizar uma formação completa. 
-            Ao Prof. Ailton, por possibilitar a construção de algo que realmente pudesse transformar a nossa escola.<br>
-            A todos os professores do curso de DS que nos incentivam e todos os alunos do 2°DSB que também desenvolveram diferentes trabalhos maravilhosos. Ao 3° DS (A e B)
-            <br>Por fim, gratidão a todos vocês que vão utilizar nosso portal, esperamos que ele possa ajudar.</p>
           </div>
-        </main>
 
-        <footer>
-            <div class="footerContent">
-                <p>&copy; 2025 Portal Etec.</p>
+          <div class="carousel-item">
+            <img src="assets/img/noticias/banner3.png" class="d-block w-100" alt="ENEM" onclick="window.open('https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos', '_blank')">
+            <div class="carousel-caption">
+              <h5>Reta final dos vestibulandos</h5>
+              <p>Acesse as provas anteriores 
+                <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos">aqui</a>
+              </p>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Adicionar feedback visual aos botões
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/img/noticias/banner1.png" class="d-block w-100" alt="Impressora social">
+            <div class="carousel-caption">
+              <h5>Impressora social</h5>
+              <p>Agora o grêmio imprime para vocês, saiba mais na página de 
+                <a href="eventos.html">Ações</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+      <!-- EQUIPE DO GRÊMIO -->
+      <section class="mainSection">
+        <section class="membros">
+          <article class="membro">
+            <img src="assets/img/analivia.jpeg" alt="Ana Livia" class="rounded-circle">
+            <h3>Ana Lívia: Diretora Social</h3>
+            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517988001141?text=Olá,%20Ana%20Lívia.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+          </article>
+          <article class="membro">
+            <img src="assets/img/rebeca.jpeg" alt="Rebeca" class="rounded-circle">
+            <h3>Rebeca: Vice-Presidente do Grêmio</h3>
+            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517997445029?text=Olá,%20Rebeca.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+          </article>
+          <article class="membro">
+            <img src="assets/img/kaique.jpeg" alt="Kaique" class="rounded-circle">
+            <h3>Kaique: Diretor de Comunicação</h3>
+            <button class="openModalBtn" onclick="window.location.href='https://wa.me/5517996211509?text=Olá,%20Kaique.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto].'">Enviar Mensagem</button>
+          </article>
+        </section>
+      </section>
+
+      <!-- AGRADECIMENTOS -->
+      <div class="section">
+        <h2>Construção do Portal Inova - Agradecimentos</h2>
+        <p>Agradecemos, primeiramente a Etec Philadelpho Gouvêa Netto, Centro Paula Souza e o Governo do Estado de São Paulo pela oportunidade de realizar uma formação completa. 
+          Ao Prof. Ailton, por possibilitar a construção de algo que realmente pudesse transformar a nossa escola.<br>
+          A todos os professores do curso de DS que nos incentivam e todos os alunos do 2°DSB que também desenvolveram diferentes trabalhos maravilhosos. Ao 3° DS (A e B)
+          <br>Por fim, gratidão a todos vocês que vão utilizar nosso portal, esperamos que ele possa ajudar.
+        </p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerContent">
+        <p>&copy; 2025 Portal Etec.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- JS Custom -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Feedback visual nos botões
         const buttons = document.querySelectorAll('.openModalBtn');
         buttons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                // Efeito de pressão
-                this.style.transform = 'scale(0.97)';
-                this.style.opacity = '0.9';
-                
-                setTimeout(() => {
-                    this.style.transform = '';
-                    this.style.opacity = '';
-                }, 200);
-            });
-            
-            // Melhorar acessibilidade para dispositivos touch
-            button.addEventListener('touchstart', function() {
-                this.style.backgroundColor = '#7a25b5';
-            });
-            
-            button.addEventListener('touchend', function() {
-                this.style.backgroundColor = '#9e34db';
-            });
+          button.addEventListener('click', function() {
+            this.style.transform = 'scale(0.97)';
+            this.style.opacity = '0.9';
+            setTimeout(() => {
+              this.style.transform = '';
+              this.style.opacity = '';
+            }, 200);
+          });
         });
-        
+
         // Ajustar altura do carousel baseado na largura da tela
         function adjustCarouselHeight() {
-            const carouselItems = document.querySelectorAll('.carousel-item');
-            const windowWidth = window.innerWidth;
-            
-            let newHeight = 500; // altura padrão para desktop
-            
-            if (windowWidth <= 1200) {
-                newHeight = 450;
-            }
-            
-            if (windowWidth <= 992) {
-                newHeight = 400;
-            }
-            
-            if (windowWidth <= 768) {
-                newHeight = 350;
-            }
-            
-            if (windowWidth <= 576) {
-                newHeight = 300;
-            }
-            
-            if (windowWidth <= 400) {
-                newHeight = 250;
-            }
-            
-            carouselItems.forEach(item => {
-                const img = item.querySelector('img');
-                if (img) {
-                    img.style.height = `${newHeight}px`;
-                }
-            });
+          const carouselItems = document.querySelectorAll('.carousel-item img');
+          const w = window.innerWidth;
+          let h = 500;
+          if (w <= 1200) h = 450;
+          if (w <= 992) h = 400;
+          if (w <= 768) h = 350;
+          if (w <= 576) h = 300;
+          if (w <= 400) h = 250;
+          carouselItems.forEach(img => img.style.height = `${h}px`);
         }
-        
-        // Inicializar carousel com intervalo
-        function initCarousel() {
-            $('#carouselExample').carousel({
-                interval: 5000, // 5 segundos
-                pause: 'hover',
-                wrap: true
-            });
-            
-            // Adicionar indicadores para melhor usabilidade em mobile
-            const carousel = document.getElementById('carouselExample');
-            const items = carousel.querySelectorAll('.carousel-item');
-            let indicatorsHtml = '<ol class="carousel-indicators">';
-            
-            items.forEach((item, index) => {
-                indicatorsHtml += `<li data-target="#carouselExample" data-slide-to="${index}"${index === 0 ? ' class="active"' : ''}></li>`;
-            });
-            
-            indicatorsHtml += '</ol>';
-            carousel.insertAdjacentHTML('afterbegin', indicatorsHtml);
-        }
-        
-        // Executar funções na carga
-        adjustCarouselHeight();
-        initCarousel();
-        
-        // Reajustar no redimensionamento da janela
-        window.addEventListener('resize', adjustCarouselHeight);
-        
-        // Melhorar acessibilidade do carousel
-        document.querySelectorAll('.carousel-control-prev, .carousel-control-next').forEach(control => {
-            control.setAttribute('aria-label', control.classList.contains('carousel-control-prev') ? 'Slide anterior' : 'Próximo slide');
-            control.setAttribute('tabindex', '0');
+
+        // Inicializar carousel
+        $('#carouselExample').carousel({
+          interval: 5000,
+          pause: 'hover',
+          wrap: true
         });
-    });
-</script>
-      </body>
+
+        adjustCarouselHeight();
+        window.addEventListener('resize', adjustCarouselHeight);
+      });
+    </script>
+  </body>
 </html>

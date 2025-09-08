@@ -1,3 +1,4 @@
+/* Container principal */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -8,218 +9,7 @@
     align-items: center;
 }
 
-/* Estilo da seção principal (notícias) */
-main {
-    padding: 6px;
-    background-color: #ecf0f1;
-}
-main .container {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
- .carousel-item img {
-        width: 800px;
-        height: 600px;         
-        object-fit: cover;    
-}
-
-.mainSection h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.25rem;
-    color: #2c3e50;
-}
-
-.mainSection {
-    margin: 1rem 0;
-    padding: 1.5rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.mainSection p {
-  line-height: 1.5;
-  font-size: 27px;
-    color: #34495e;
-    margin-bottom: 10px;
-    padding: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
-    display: flex;
-    text-align: center;
-}
-
-/* Estilo de cada notícia */
-.section {
-    width: 100%;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.section h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2 rem;
-    color: #2c3e50;
-}
-
-.section p {
-    font-size: 20px;
-    color: #7f8c8d;
-    padding: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
-    text-align: center;
-}
-/* Estilo da equipe */
-
-.membros {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.membro:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-.membro {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-}
-
-.membro h3 {
-    font-size: 22px;
-    color: #2c3e50;
-    margin-top: 10px;
-    height: 50px;
-}
-
-.membro img {
-    width: auto;
-    height: 120px;
-    border-radius: 8px;
-}
-/* Modal */
-.openModalBtn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #9e34db;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.openModalBtn:hover {
-    background-color: #8c2ae1;
-}
-
-/* Header Responsivo - Mantido igual às outras páginas */
-@media (max-width: 1024px) {
-    .menuItens {
-        font-size: 15px;
-        margin-right: 8px;
-    }
-}
-
-@media (max-width: 880px) {
-    .menuItens {
-        font-size: 14px;
-        margin-right: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .headerCont {
-        padding: 0.5rem;
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .menuNav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 14px;
-        margin-right: 0;
-        padding: 0.25rem 0.5rem;
-    }
-    
-    .imgLogo {
-        margin-bottom: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .headerCont {
-        padding: 0.5rem 0;
-    }
-    
-    .imgLogo {
-        height: 50px;
-        width: 100px;
-    }
-    
-    .menuNav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .menuItens {
-        font-size: 1rem;
-    }
-}
-
-/* Container principal responsivo */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Estilo da seção principal (notícias) */
+/* Seção principal */
 main {
     padding: 6px;
     background-color: #ecf0f1;
@@ -233,7 +23,9 @@ main .container {
     padding: 0 15px;
 }
 
-/* Carousel responsivo */
+/* ==============================
+   CAROUSEL / BANNER
+   ============================== */
 .carousel-item img {
     width: 100%;
     height: auto;
@@ -255,11 +47,17 @@ main .container {
 .carousel-caption h5 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    display: block !important;
+    color: #fff;
+    text-align: center;
 }
 
 .carousel-caption p {
     font-size: 1rem;
     margin-bottom: 0;
+    display: block !important;
+    color: #f1f1f1;
+    text-align: center;
 }
 
 .carousel-caption a {
@@ -267,7 +65,53 @@ main .container {
     text-decoration: underline;
 }
 
-/* Seções de conteúdo */
+/* Indicadores do carousel */
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 15;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.9;
+}
+
+/* ==============================
+   SEÇÕES PRINCIPAIS
+   ============================== */
 .mainSection h2 {
     text-align: center;
     font-weight: bold;
@@ -300,7 +144,7 @@ main .container {
     width: 100%;
 }
 
-/* Estilo de cada notícia */
+/* Notícias */
 .section {
     width: 100%;
     background-color: #fff;
@@ -332,7 +176,9 @@ main .container {
     margin: 0;
 }
 
-/* Estilo da equipe */
+/* ==============================
+   EQUIPE
+   ============================== */
 .membros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -378,7 +224,9 @@ main .container {
     object-fit: cover;
 }
 
-/* Botões */
+/* ==============================
+   BOTÕES
+   ============================== */
 .openModalBtn {
     display: block;
     width: 100%;
@@ -398,18 +246,48 @@ main .container {
     background-color: #8c2ae1;
 }
 
-/* Media Queries para responsividade */
+/* ==============================
+   MENU RETRÁTIL (HAMBÚRGUER)
+   ============================== */
+.imgLogo {
+    height: 60px;
+    width: 120px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dcdcdc !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
 @media screen and (max-width: 1200px) {
     .membros {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         padding: 30px;
     }
-    
+
     .mainSection p {
         font-size: 1.2rem;
     }
-    
+
     .section p {
         font-size: 1.05rem;
     }
@@ -420,30 +298,17 @@ main .container {
         bottom: 15px;
         padding: 12px;
     }
-    
+
     .carousel-caption h5 {
         font-size: 1.3rem;
     }
-    
+
     .carousel-caption p {
         font-size: 0.9rem;
     }
-    
+
     .mainSection h2 {
         font-size: 2rem;
-    }
-    
-    .mainSection {
-        padding: 1.25rem;
-        margin: 1.25rem 0;
-    }
-    
-    .section {
-        padding: 1.5rem;
-    }
-    
-    .section h2 {
-        font-size: 1.8rem;
     }
 }
 
@@ -453,20 +318,7 @@ main .container {
         gap: 20px;
         padding: 20px;
     }
-    
-    .membro {
-        padding: 15px;
-    }
-    
-    .membro img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .membro h3 {
-        font-size: 1.2rem;
-    }
-    
+
     .carousel-caption {
         position: relative;
         bottom: 0;
@@ -476,37 +328,15 @@ main .container {
         border-radius: 0;
         background-color: rgba(0, 0, 0, 0.8);
     }
-    
+
     .carousel-item img {
         max-height: 400px;
     }
-    
-    .mainSection h2 {
-        font-size: 1.8rem;
-    }
-    
+
     .mainSection p {
         font-size: 1.1rem;
         text-align: justify;
         padding: 0 10px;
-    }
-    
-    .section {
-        padding: 1.25rem;
-        margin: 1rem 0;
-    }
-    
-    .section h2 {
-        font-size: 1.6rem;
-    }
-    
-    .section p {
-        font-size: 1rem;
-    }
-    
-    .openModalBtn {
-        padding: 10px;
-        font-size: 0.9rem;
     }
 }
 
@@ -514,69 +344,27 @@ main .container {
     .carousel-item img {
         max-height: 350px;
     }
-    
-    .carousel-caption {
-        padding: 10px;
-    }
-    
+
     .carousel-caption h5 {
         font-size: 1.1rem;
     }
-    
+
     .carousel-caption p {
         font-size: 0.85rem;
     }
-    
-    .mainSection {
-        padding: 1rem;
-        margin: 1rem 0;
-        gap: 1rem;
-    }
-    
-    .mainSection h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-    }
-    
-    .mainSection p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
+
     .membros {
         padding: 15px;
         gap: 15px;
     }
-    
-    .membro {
-        padding: 12px;
-    }
-    
+
     .membro img {
         width: 90px;
         height: 90px;
     }
-    
+
     .membro h3 {
         font-size: 1.1rem;
-        margin-top: 10px;
-    }
-    
-    .section {
-        padding: 1rem;
-    }
-    
-    .section h2 {
-        font-size: 1.4rem;
-    }
-    
-    .section p {
-        font-size: 0.95rem;
-    }
-    
-    .openModalBtn {
-        padding: 8px;
-        font-size: 0.85rem;
     }
 }
 
@@ -584,119 +372,36 @@ main .container {
     .carousel-item img {
         max-height: 300px;
     }
-    
-    .mainSection h2 {
-        font-size: 1.4rem;
+
+    .carousel-caption h5 {
+        font-size: 1rem;
     }
-    
-    .mainSection p {
-        font-size: 0.95rem;
+
+    .carousel-caption p {
+        font-size: 0.8rem;
     }
-    
+
     .membro img {
         width: 80px;
         height: 80px;
     }
-    
+
     .membro h3 {
         font-size: 1rem;
     }
-    
-    .section h2 {
-        font-size: 1.3rem;
-    }
-    
-    .section p {
-        font-size: 0.9rem;
-    }
-}
-    /* Indicadores do carousel */
-.carousel-indicators {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    z-index: 15;
 }
 
-.carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    border: none;
-}
-
-.carousel-indicators .active {
-    background-color: #fff;
-}
-
-/* Melhorias para mobile */
-@media screen and (max-width: 768px) {
-    .carousel-indicators {
-        bottom: 10px;
-    }
-    
-    .carousel-indicators li {
-        width: 10px;
-        height: 10px;
-        margin: 0 4px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .carousel-indicators {
-        bottom: 8px;
-    }
-    
-    .carousel-indicators li {
-        width: 8px;
-        height: 8px;
-        margin: 0 3px;
-    }
-}
-
-/* Melhorias de acessibilidade e usabilidade */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 50px;
-    height: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.7;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 0.9;
-}
-
-/* Garantir que as imagens sejam responsivas */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Melhorias para telas de toque */
+/* Melhorias de acessibilidade em telas de toque */
 @media (hover: none) {
     .membro:hover {
         transform: none;
     }
-    
+
     .section:hover {
         transform: none;
     }
-    
+
     .openModalBtn {
-        min-height: 44px; /* Tamanho mínimo para toque */
+        min-height: 44px;
     }
 }
