@@ -1,97 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        
+<head>
+    <meta charset="UTF-8">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
-        <title>Portal Grêmio Escolar</title>
-        <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
 
-        <link rel="stylesheet" href="assets/css/components/Globals.css">
-        <link rel="stylesheet" href="assets/css/components/Header.css">
-        <link rel="stylesheet" href="assets/css/components/Footer.css">
-        <link rel="stylesheet" href="assets/css/pages/acoes.css">
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <body>
-        <header>
-            <div class="headerCont">
-                <a href="index.html">
-                    <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio" width="96">
-                </a>
-                <nav class="menuNav">
-                    <a href="quemSomos.html" class="menuItens">Quem Somos</a>
-                    <a href="calendario.html" class="menuItens">Calendário</a>
-                    <a href="esportes.html" class="menuItens">Esportes e Clubes</a>
-                    <a href="biblioteca.html" class="menuItens">Biblioteca</a>
-                    <a href="apoioEduc.html" class="menuItens">Apoio Escolar</a>
-                    <a href="index.html" class="menuItens">Ações</a>
-                </nav>
+    <title>Portal Grêmio Escolar</title>
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/components/Globals.css">
+    <link rel="stylesheet" href="assets/css/components/Header.css">
+    <link rel="stylesheet" href="assets/css/components/Footer.css">
+    <link rel="stylesheet" href="assets/css/pages/acoes.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7324e1;">
+            <a class="navbar-brand" href="index.html">
+                <img class="imgLogo" src="assets/img/nav-test.png" alt="Logo do Grêmio">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuMobile"
+                aria-controls="menuMobile" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuMobile">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="quemSomos.html" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="calendario.html" class="nav-link">Calendário</a></li>
+                    <li class="nav-item"><a href="esportes.html" class="nav-link">Esportes e Clubes</a></li>
+                    <li class="nav-item"><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+                    <li class="nav-item"><a href="apoioEduc.html" class="nav-link">Apoio Escolar</a></li>
+                    <li class="nav-item"><a href="acoes.html" class="nav-link active">Ações</a></li>
+                </ul>
             </div>
-        </header>
+        </nav>
+    </header>
 
-        <main>
-    <div class="mainContent">
+    <main>
+        <div class="mainContent">
 
-                <div class="mainSection">
-                    <h2>Nossos Projetos</h2>
-                    <div class="projectsContainer">
-                        <div class="projectCard">
-                            <img src="assets/img/noticias/vaiTarde.png">
-                            <h3>Vai Tarde</h3>
-                            <p>Vamos nos despedir desses 3°s maravilhosos e receber os próximos.</p>
-                        </div>
-                        <div class="projectCard">
-                            <img src="assets/img/noticias/hallowTec.png">
-                            <h3>HallowTec</h3>
-                            <p>Outubro já tá aí e estamos preparando uma festa a fantasia de arrepiar</p>
-                        </div>
-                        <div class="projectCard">
-                            <img src="assets/img/noticias/intercurso.png">
-                            <h3>Intercurso</h3>
-                            <p>Atléticas, se organizem... Teremos os jogos entre cursos da Etec.</p>
-                        </div>
+            <div class="mainSection">
+                <h2>Nossos Projetos</h2>
+                <div class="projectsContainer">
+                    <div class="projectCard">
+                        <img src="assets/img/noticias/vaiTarde.png">
+                        <h3>Vai Tarde</h3>
+                        <p>Vamos nos despedir desses 3°s maravilhosos e receber os próximos.</p>
+                    </div>
+                    <div class="projectCard">
+                        <img src="assets/img/noticias/hallowTec.png">
+                        <h3>HallowTec</h3>
+                        <p>Outubro já tá aí e estamos preparando uma festa a fantasia de arrepiar</p>
+                    </div>
+                    <div class="projectCard">
+                        <img src="assets/img/noticias/intercurso.png">
+                        <h3>Intercurso</h3>
+                        <p>Atléticas, se organizem... Teremos os jogos entre cursos da Etec.</p>
                     </div>
                 </div>
-                <div class="mainSection donateSection">
-                    <h2>Quer ajudar o grêmio?</h2>
-                    <p>Acesse nosso grupo de Amigos do Grêmio e venha trabalhar conosco <a href="https://chat.whatsapp.com/F4ibp39jFAU4MWUWLQ9zDl" target="_blank">
-                    <br><button>Seja Inova</button></a></p>                  
-                </div>
-                
-                <div class="mainSection donateSection">
-                    <h2>Apoie Nossos Projetos</h2>
-                    <p>Sua contribuição ajuda a transformar ideias em realidade!</p>
-                    <button id="btnQrCode">Doe Agora</button>
-                    <div id="qrCodeContainer">
-                        <img src="assets/img/qrCodePix.png" alt="QrCode Pix">
-                    </div>
-                </div>
-                
-                <div class="mainSection donateSection">
-                    <h2>Envie Sua Ideia</h2>
-                    <p>Tem uma sugestão para novos projetos? Envie para nós!<br> Se preferir, você pode usar a caixinha de sugestões na porta do Grêmio</p>                  
-                    <button onclick="window.location.href='mailto:rebeca.w.fadil@gmail.com?subject=Assunto:%20Sugestão%20para%20o%20Grêmio&body=Olá,%20Inovers.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto]%20com%20vocês.'">Enviar sugestão</button>
-                </div>
             </div>
-        </main>
+            <div class="mainSection donateSection">
+                <h2>Quer ajudar o grêmio?</h2>
+                <p>Acesse nosso grupo de Amigos do Grêmio e venha trabalhar conosco <a
+                        href="https://chat.whatsapp.com/F4ibp39jFAU4MWUWLQ9zDl" target="_blank">
+                        <br><button>Seja Inova</button></a></p>
+            </div>
 
-        <footer>
-            <div class="footerContent">
-                 <p>&copy; 2025 Portal Etec.</p>
+            <div class="mainSection donateSection">
+                <h2>Apoie Nossos Projetos</h2>
+                <p>Sua contribuição ajuda a transformar ideias em realidade!</p>
+                <button id="btnQrCode">Doe Agora</button>
+                <div id="qrCodeContainer">
+                    <img src="assets/img/qrCodePix.png" alt="QrCode Pix">
+                </div>
             </div>
-        </footer>
-        <script src="assets/js/qrCodePix.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+
+            <div class="mainSection donateSection">
+                <h2>Envie Sua Ideia</h2>
+                <p>Tem uma sugestão para novos projetos? Envie para nós!<br> Se preferir, você pode usar a caixinha de
+                    sugestões na porta do Grêmio</p>
+                <button
+                    onclick="window.location.href='mailto:rebeca.w.fadil@gmail.com?subject=Assunto:%20Sugestão%20para%20o%20Grêmio&body=Olá,%20Inovers.%20Meu%20nome%20é%20[seu nome]%20gostaria%20de%20falar%20sobre%20[assunto]%20com%20vocês.'">Enviar
+                    sugestão</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContent">
+            <p>&copy; 2025 Portal Etec.</p>
+        </div>
+    </footer>
+    <script src="assets/js/qrCodePix.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
